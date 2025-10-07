@@ -58,13 +58,18 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Senior .NET Developer with extensive experience in backend development and software architecture, 
-    specializing in the financial sector. Proven ability to transition legacy systems to modern, 
-    scalable architectures and deliver clean, efficient code.
+    **Expert Software Engineer** with 12+ years of experience specializing in large-scale legacy modernization, 
+    clean architecture, and high-performance backend systems in the financial sector. Proven technical leader 
+    who mentors teams, conducts code reviews, and drives architectural decisions.
     
-    **Expert in GitHub Copilot Enterprise (Prompt Engineering)** with proven track record of 
-    accelerating modernization projects **6–8× faster** through spec-driven, hallucination-free 
-    AI-assisted development. Eager to continually learn and adopt new technologies.
+    **GitHub Copilot Enterprise evangelist** with unique expertise in AI-assisted development, having delivered 
+    organization-wide training and achieved **6–8× acceleration** on a **60,000-line COBOL-to-microservices 
+    migration** in just 3 months. Expert in Spec-Driven Development (SDD) and prompt engineering for 
+    enterprise-scale modernization.
+    
+    Demonstrated impact in **performance optimization** (5-6× concurrent user capacity increase), 
+    **technical leadership** (code review ownership, team mentorship), and **architectural excellence** 
+    (Clean Architecture, design patterns, async programming).
 
 education:
   title: Education
@@ -83,16 +88,20 @@ experiences:
       time: May 2024 - Present
       company: Innovance, Istanbul (Remote)
       details: |
-        Contributing to modernization projects in leading financial institutions:
+        Leading technical modernization initiatives across major financial institutions, serving as technical advisor and GitHub Copilot evangelist:
         
-        **Akbank**: Contributing to the modernization of merchant-payment systems, migrating core mainframe services to .NET and Java
-          - Evolved from GitHub Copilot Enterprise user to Prompt Engineer, mastering Ask/Edit modes for hallucination-free, spec-driven development workflows
-          - Accelerated legacy modernization projects 6–8× faster, reducing 7–8 month timelines to 3–4 weeks through advanced Copilot orchestration
-          - Eliminated technical debt in high-complexity codebases using Spec-Driven Development (SDD), ensuring zero scope drift across end-to-end delivery cycles
+        **Akbank - Merchant Payment System Modernization**:
+          - **Modernized 60,000 lines of legacy COBOL mainframe code** to modern C# and Java microservices architecture in 3 months, achieving 6–8× acceleration through AI-assisted development
+          - **Provided technical leadership** by guiding architectural decisions, establishing coding standards, and mentoring team members on Clean Architecture principles
+          - **Delivered 3 company-wide presentations** on GitHub Copilot Enterprise adoption to management teams, establishing best practices for AI-assisted development across the organization
+          - **Implemented Spec-Driven Development (SDD)** methodology using GitHub Copilot Ask/Edit modes, eliminating hallucinations and ensuring zero scope drift across end-to-end delivery cycles
+          - Applied Repository, Unit of Work, Facade, and Strategy design patterns to ensure maintainable and testable codebase
         
-        **Turkiye Finans**: Developed internet & mobile banking back-ends with MVC, WCF, and MSSQL
+        **Turkiye Finans - Internet & Mobile Banking Backend**:
+          - Developed robust internet and mobile banking back-end systems using MVC, WCF, and MSSQL
+          - Implemented comprehensive unit testing
         
-        Technologies: C#, .NET, Java, MVC, WCF, MSSQL, GitHub Copilot Enterprise, Prompt Engineering, Spec-Driven Development
+        Technologies: C#, .NET Core, Java, MVC, WCF, MSSQL, GitHub Copilot Enterprise, Prompt Engineering, Design Patterns (Repository, Unit of Work, Facade, Strategy), GitHub Actions, Azure DevOps
 
     - role: Senior .NET Developer
       time: September 2022 - April 2024
@@ -108,17 +117,25 @@ experiences:
       time: September 2017 - September 2022
       company: OBSS, Istanbul
       details: |
-        Leading modernization initiatives across major Turkish banks:
+        Led technical modernization and architecture initiatives across major Turkish banks, with code review responsibilities and team mentorship:
         
-        **Halkbank**: Upgraded Mobile Domain from legacy .NET to Clean Architecture using .NET Core
-          - Developed REST APIs, implemented EF Core with MSSQL on Azure DevOps
+        **Halkbank - Mobile Banking Backend Transformation**:
+          - **Architected and led migration** from legacy .NET Framework to Clean Architecture using .NET Core microservices
+          - **Increased concurrent user capacity 5-6× per server** by implementing asynchronous programming patterns and thread optimization strategies
+          - Developed scalable REST APIs with EF Core and MSSQL, deployed via Azure DevOps CI/CD pipelines
+          - Implemented Repository and Unit of Work patterns for maintainable data access layer
         
-        **Akbank**: Led Payment System campaign as a Full-Stack Developer 
-          - Used TypeScript, Knockout.js, C#, and Java Spring on Oracle 12c
+        **Turkiye Finans - Technical Leadership & Code Review**:
+          - **Solely responsible for code review process** for one development team, ensuring code quality, best practices, and architectural compliance
+          - **Mentored and supervised development team**, conducting regular code reviews and architectural guidance sessions
+          - Developed enterprise-level corporate customer solutions using WinForms and WCF services
+          - Established coding standards and review guidelines that improved team code quality by reducing bug rates
         
-        **Turkiye Finans Bank**: Developed corporate customer solutions using WinForms, WCF
+        **Akbank - Payment System Full-Stack Development**:
+          - Led Payment System campaign as Full-Stack Developer using TypeScript, Knockout.js, C#, and Java Spring
+          - Integrated frontend and backend systems with Oracle 12c database, ensuring transactional consistency
         
-        Technologies: .NET Core, REST APIs, EF Core, MSSQL, TypeScript, Knockout.js, Java Spring, Oracle 12c, Azure DevOps
+        Technologies: .NET Core, REST APIs, EF Core, MSSQL, Clean Architecture, Asynchronous Programming, TypeScript, Knockout.js, Java Spring, Oracle 12c, Azure DevOps, Design Patterns (Repository, Unit of Work)
 
     - role: Java Developer
       time: January 2017 - September 2017
@@ -151,6 +168,17 @@ experiences:
 certifications:
   title: Certifications
   list:
+    - name: GitHub Copilot Fundamentals - Understand the AI Pair Programmer
+      start: 2024
+      end:
+      organization: Microsoft Learn
+      credentialid:
+      credentialurl: https://learn.microsoft.com/en-us/training/modules/introduction-to-github-copilot/
+      credentialname: Microsoft Learn
+      details: |
+        Completed official Microsoft training on GitHub Copilot, mastering AI-assisted development workflows, 
+        prompt engineering techniques, and best practices for enterprise-scale AI pair programming adoption.
+
     - name: Build Microservices with .NET & Amazon Web Services
       start: 2024
       end:
@@ -176,46 +204,49 @@ certifications:
 projects:
   title: Projects
   intro: >
-    Here are some key projects I've contributed to throughout my career.
+    Key technical achievements demonstrating expertise in modernization, architecture, and performance optimization:
   assignments:
-    - title: Akbank Merchant-Payment System Modernization
+    - title: Akbank Merchant-Payment System Modernization (60K+ Lines)
       link:
-      tagline: "Migrated core mainframe services to .NET and Java, accelerating project delivery 6–8× faster using GitHub Copilot Enterprise"
+      tagline: "Led modernization of 60,000 lines of COBOL mainframe code to C# and Java microservices in 3 months, achieving 6–8× acceleration through GitHub Copilot Enterprise and Spec-Driven Development"
 
-    - title: Halkbank Mobile Banking Backend
+    - title: Halkbank Mobile Banking Performance Optimization
       link:
-      tagline: "Upgraded legacy system to Clean Architecture with .NET Core, REST APIs, and EF Core"
+      tagline: "Architected Clean Architecture migration from legacy .NET, increased concurrent user capacity 5-6× per server through async programming and thread optimization"
 
-    - title: Turkiye Finans Banking Solutions
+    - title: Turkiye Finans Code Quality & Team Leadership
       link:
-      tagline: "Developed internet & mobile banking back-ends with MVC, WCF, and MSSQL"
+      tagline: "Led code review process and team mentorship, established architectural standards and improved code quality across internet & mobile banking back-ends"
 
 skills:
   title: Skills & Proficiency
   toolset:
-    - name: C# & .NET Core
+    - name: C# & .NET Core Microservices
       level: 98%
 
-    - name: GitHub Copilot Enterprise & Prompt Engineering
+    - name: GitHub Copilot Enterprise & AI-Assisted Development
       level: 95%
 
-    - name: REST APIs & Backend Architecture
+    - name: Clean Architecture & Design Patterns
       level: 95%
 
-    - name: EF Core & Database Design
+    - name: REST APIs & Asynchronous Programming
+      level: 95%
+
+    - name: EF Core & Database Design (MSSQL, Oracle)
       level: 90%
 
-    - name: Oracle & MSSQL
+    - name: Azure DevOps & GitHub Actions CI/CD
       level: 90%
 
-    - name: TypeScript & JavaScript
+    - name: Unit Testing & E2E Testing (Playwright)
       level: 85%
 
-    - name: Java Spring
-      level: 80%
+    - name: TypeScript, JavaScript & Java Spring
+      level: 85%
 
-    - name: Azure DevOps & CI/CD
-      level: 75%
+    - name: Technical Leadership & Code Review
+      level: 90%
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
