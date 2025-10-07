@@ -68,7 +68,7 @@ jobs:
       - name: Generate PDF from HTML (using print layout)
         run: |
           mkdir -p output
-          wkhtmltopdf --enable-local-file-access --print-media-type _site/cv/print/index.html output/Burak_Kalafat_CV.pdf
+          wkhtmltopdf --enable-local-file-access --print-media-type file://$PWD/_site/print/index.html output/Burak_Kalafat_CV.pdf
           
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4

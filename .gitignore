@@ -36,3 +36,4 @@ output/
 # Temp files
 tmp/
 temp/
+.playwright-mcp/
