@@ -46,13 +46,16 @@ sidebar:
   interests:
     title: Interests
     info:
-      - item: GitHub Copilot Enterprise
+      - item: Chess
         link:
 
-      - item: Clean Architecture
+      - item: LLM & RAG-based Enterprise Solutions
         link:
 
-      - item: Cloud Technologies
+      - item: AI-Powered Customer Service Systems
+        link:
+
+      - item: Travel & Exploring Cultures
         link:
 
 career-profile:
