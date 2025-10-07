@@ -143,22 +143,11 @@ jobs:
             --to docx \
             --standalone
             
-      - name: Generate PDF from Markdown (Bonus)
-        run: |
-          pandoc resume.md \
-            -o output/Burak_Kalafat_CV_Pandoc.pdf \
-            --from markdown \
-            --to pdf \
-            --pdf-engine=xelatex \
-            -V geometry:margin=1in
-            
       - name: Upload DOCX artifact
         uses: actions/upload-artifact@v4
         with:
           name: cv-docx
-          path: |
-            output/Burak_Kalafat_CV.docx
-            output/Burak_Kalafat_CV_Pandoc.pdf
+          path: output/Burak_Kalafat_CV.docx
           retention-days: 90
           
       - name: Commit generated files (optional)
@@ -168,7 +157,6 @@ jobs:
           git config --local user.name "github-actions[bot]"
           mkdir -p downloads
           cp output/Burak_Kalafat_CV.docx downloads/
-          cp output/Burak_Kalafat_CV_Pandoc.pdf downloads/
           git add downloads/ || true
           git commit -m "Update generated CV files [skip ci]" || echo "No changes to commit"
           git push || echo "No changes to push"
