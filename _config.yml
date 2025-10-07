@@ -1,182 +1,30 @@
-# Site Settings
+#
+# Site Settings for Online CV Theme
+# Be aware that even a small syntax error here can lead to failures in output
+#
+
+# Site configuration
 title: Burak Kalafat - CV
-email: burakkalafat89@gmail.com
-description: >-
-  Professional CV/Resume of Burak Kalafat - Expert Software Engineer specializing in .NET and backend development
-baseurl: "/cv"
-url: "https://bkalafat.github.io"
+description: Professional CV/Resume of Burak Kalafat - Expert Software Engineer specializing in .NET and backend development
+baseurl: "/cv" # the subpath of your site, e.g. /blog
+url: "https://bkalafat.github.io" # the base hostname & protocol for your site
 
-# Theme Settings
-remote_theme: sproogen/modern-resume-theme
+# Theme configuration
+# Available skins: blue, turquoise, green, berry, orange, ceramic
+# Choose the one that looks most professional
+theme_skin: blue
 
-# Personal Info
-name: Burak Kalafat
-title: "Expert Software Engineer"
-email: burakkalafat89@gmail.com
-phone: "+905403506161"
-website: https://github.com/bkalafat
-
-# Social Links
-github_username: bkalafat
-linkedin_username: bkalafat
-
-# SEO Settings
-twitter_username: # Add if you have Twitter
-og_image: assets/images/profile.jpg
+# SEO and Meta
 lang: en
+# Google Analytics tracking ID (optional)
+# analytics: UA-XXXXXXXXX-X
 
-# About Section
-about_profile_image: assets/images/profile.jpg
-about_content: |
-  Senior .NET Developer with extensive experience in backend development and software architecture, 
-  specializing in the financial sector. Proven ability to transition legacy systems to modern, 
-  scalable architectures and deliver clean, efficient code. **Expert in GitHub Copilot Enterprise 
-  (Prompt Engineering) with proven track record of accelerating modernization projects 6–8× faster 
-  through spec-driven, hallucination-free AI-assisted development.** Eager to continually learn and adopt new technologies.
-  
-  I am most skilled in: <mark>C#</mark>, <mark>.NET Core</mark>, <mark>REST APIs</mark>, <mark>EF Core</mark>, 
-  <mark>Oracle</mark>, <mark>MSSQL</mark>, <mark>TypeScript</mark>, <mark>Java Spring</mark>, 
-  <mark>GitHub Copilot Enterprise</mark>, and <mark>Prompt Engineering</mark>
-  
-  ---
-  
-  📥 **Download Resume:** 
-  [📄 PDF](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_CV.pdf) | 
-  [📝 DOCX](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_CV.docx)
-
-# Content configuration
-content:
-  - title: Experience
-    layout: list
-    content:
-      - layout: left
-        company: Innovance
-        job_title: Expert .NET Developer
-        dates: May 2024 - Present
-        location: Istanbul (Remote)
-        quote: >
-          Contributing to modernization projects in leading financial institutions
-        description: |
-          - **Akbank**: Contributing to the modernization of merchant-payment systems, migrating core mainframe services to .NET and Java
-            - Evolved from GitHub Copilot Enterprise user to Prompt Engineer, mastering Ask/Edit modes for hallucination-free, spec-driven development workflows
-            - Accelerated legacy modernization projects 6–8× faster, reducing 7–8 month timelines to 3–4 weeks through advanced Copilot orchestration
-            - Eliminated technical debt in high-complexity codebases using Spec-Driven Development (SDD), ensuring zero scope drift across end-to-end delivery cycles
-          - **Turkiye Finans**: Developed internet & mobile banking back-ends with MVC, WCF, and MSSQL
-          
-          Technologies: C#, .NET, Java, MVC, WCF, MSSQL, GitHub Copilot Enterprise, Prompt Engineering, Spec-Driven Development
-
-      - layout: left
-        company: InsightSoftware
-        job_title: Senior .NET Developer
-        dates: September 2022 - April 2024
-        location: North Carolina (Remote)
-        description: |
-          - Contributed to the architecture, design, and implementation of backend-heavy features using C#
-          - Worked in an international, remote-first environment
-          - Delivered scalable and maintainable solutions
-          
-          Technologies: C#, .NET Core, Backend Architecture
-
-      - layout: left
-        company: OBSS
-        job_title: Senior .NET Developer
-        dates: September 2017 - September 2022
-        location: Istanbul
-        quote: >
-          Leading modernization initiatives across major Turkish banks
-        description: |
-          - **Halkbank**: Upgraded Mobile Domain from legacy .NET to Clean Architecture using .NET Core
-            - Developed REST APIs, implemented EF Core with MSSQL on Azure DevOps
-          - **Akbank**: Led Payment System campaign as a Full-Stack Developer 
-            - Used TypeScript, Knockout.js, C#, and Java Spring on Oracle 12c
-          - **Turkiye Finans Bank**: Developed corporate customer solutions using WinForms, WCF
-          
-          Technologies: .NET Core, REST APIs, EF Core, MSSQL, TypeScript, Knockout.js, Java Spring, Oracle 12c, Azure DevOps
-
-      - layout: left
-        company: TUBITAK
-        job_title: Java Developer
-        dates: January 2017 - September 2017
-        location: Kocaeli
-        description: |
-          - Used Java and APDU to write high-level security EAC SAC data to smartcard's passport chip
-          - Worked on secure government identification systems
-          
-          Technologies: Java, APDU, Smartcard Technology
-
-      - layout: left
-        company: VakıfBank
-        job_title: .NET Developer
-        dates: August 2013 - February 2017
-        location: Istanbul, Turkey
-        description: |
-          - Transformed legacy systems to service-oriented architectures for CRM and Collections teams
-          - Implemented MVVM pattern with WPF and WCF services
-          - Worked with Oracle 11g database and PL/SQL
-          
-          Technologies: .NET, MVVM, WPF, WCF, Oracle 11g, PL/SQL
-
-      - layout: left
-        company: VeriPark
-        job_title: Part-Time .NET Developer
-        dates: December 2012 - June 2013
-        location: Izmir, Turkey
-        description: |
-          - Developed add-on widgets using ASP.NET for Turkcell SharePoint environment
-          - Worked part-time while completing university studies
-          
-          Technologies: ASP.NET, SharePoint
-          
-  - title: Education
-    layout: list
-    content:
-      - layout: left
-        name: Ege University
-        dates: September 2008 - June 2013
-        qualification: Bachelor of Science in Computer Engineering
-        location: Izmir, Turkey
-        description: |
-          Completed comprehensive computer engineering program covering software development, 
-          algorithms, data structures, and system design.
-
-  - title: Certifications & Professional Development
-    layout: list
-    content:
-      - layout: top-middle
-        name: Certified React Nanodegree Program
-        link: https://www.udacity.com
-        dates: February 2020
-        quote: >
-          Advanced React development certification
-        description: |
-          Completed comprehensive React training program through Udacity, covering modern frontend 
-          development practices, state management, and component architecture.
-
-      - layout: top-middle
-        name: Build Microservices with .NET & Amazon Web Services
-        dates: February 2024
-        quote: >
-          Cloud-native microservices architecture
-        description: |
-          Completed advanced training in building scalable microservices using .NET and AWS cloud platform, 
-          covering distributed systems, containerization, and cloud deployment strategies.
-
-  - title: Download Resume
-    layout: text
-    content: |
-      Download my resume in different formats:
-      
-      - 📄 **[Download PDF](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_CV.pdf)** - Direct download
-      - 📝 **[Download DOCX](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_CV.docx)** - Direct download
-      - 🖨️ **Print to PDF** - Use `Ctrl+P` (Windows) or `Cmd+P` (Mac) and save as PDF
-      - 📦 **[View All Versions](https://github.com/bkalafat/cv/actions)** - Download from GitHub Actions artifacts
-      
-      *Note: Files are automatically updated after each commit. Direct download links always point to the latest version.*
+# Chrome mobile color (optional)
+chrome_mobile_color: #42A8C0
 
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
 
@@ -190,19 +38,16 @@ exclude:
   - PLAN.md
   - BURAK_KALAFAT.pdf
   - BURAK_KALAFAT.docx
+  - _config.yml.backup
   - output/
+  - downloads/
   - "*.gem"
   - "*.gemspec"
   - LICENSE
   - package.json
   - package-lock.json
-
-# Dark Mode (optional)
-darkmode: false
-
-# Footer
-footer_show_references: true
-references_title: References available upon request
+  - .github/
+  - docker-compose.yml
 
 # Google Analytics (optional)
 # google_analytics: "UA-XXXXXXX-X"
