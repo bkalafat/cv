@@ -63,17 +63,17 @@ career-profile:
   title: Career Profile
   summary: |
     **Expert Software Engineer** with 12+ years of experience specializing in large-scale legacy modernization, 
-    clean architecture, and high-performance backend systems in the financial sector. Proven technical leader 
-    who mentors teams, conducts code reviews, and drives architectural decisions.
+    clean architecture, and high-performance backend systems within the financial sector. Proven technical leader 
+    adept at mentoring teams, conducting code reviews, and driving architectural decisions.
     
-    **GitHub Copilot Enterprise champion** with unique expertise in AI-assisted development, having delivered 
-    organization-wide training and achieved **6-8× acceleration** on a **60,000-line COBOL-to-microservices 
-    migration** in just 3 months. Expert in Spec-Driven Development (SDD) and prompt engineering for 
+    **GitHub Copilot Enterprise champion** with specialized expertise in AI-assisted development, delivering 
+    organization-wide training and achieving **6-8× acceleration** on a **60,000-line COBOL-to-microservices 
+    migration** within 3 months. Expert in Spec-Driven Development (SDD) and prompt engineering for 
     enterprise-scale modernization.
     
-    Demonstrated impact in **performance optimization** (5-6× concurrent user capacity increase), 
+    Demonstrated impact through **performance optimization** (5-6× concurrent user capacity increase), 
     **technical leadership** (code review ownership, team mentorship), and **architectural excellence** 
-    (Clean Architecture, design patterns, async programming).
+    (Clean Architecture, design patterns, asynchronous programming).
 
 education:
   title: Education
@@ -90,18 +90,17 @@ experiences:
       time: May 2024 - Present
       company: Innovance, Istanbul (Remote)
       details: |
-        Leading technical modernization initiatives across major financial institutions, serving as technical advisor and GitHub Copilot evangelist:
+        Lead technical modernization initiatives across major financial institutions, serving as technical advisor and GitHub Copilot champion:
         
         **Akbank - Merchant Payment System Modernization**:
-          - Modernized **60,000 lines** of legacy COBOL mainframe code to modern C# and Java microservices architecture in **3 months**, achieving **6-8× acceleration** through AI-assisted development
-          - Provided technical leadership by guiding architectural decisions, establishing coding standards, and mentoring team members on Clean Architecture principles
-          - Delivered **3 company-wide presentations** on GitHub Copilot Enterprise adoption to management teams, establishing best practices for AI-assisted development across the organization
-          - Implemented Spec-Driven Development (SDD) methodology using GitHub Copilot Ask/Edit modes, eliminating hallucinations and ensuring zero scope drift across end-to-end delivery cycles
-          - Applied Repository, Unit of Work, Facade, and Strategy design patterns to ensure maintainable and testable codebase
+          - Modernized **60,000 lines** of legacy COBOL mainframe code to modern C# and Java microservices in **3 months**, achieving **6-8× acceleration** through AI-assisted development
+          - Provided technical leadership through architectural guidance, coding standards establishment, and team mentorship on Clean Architecture principles
+          - Delivered **3 company-wide presentations** on GitHub Copilot Enterprise adoption to management, establishing AI-assisted development best practices organization-wide
+          - Implemented Spec-Driven Development (SDD) methodology using GitHub Copilot Ask/Edit modes, eliminating hallucinations and ensuring zero scope drift
+          - Applied Repository, Unit of Work, Facade, and Strategy design patterns to ensure maintainable, testable codebase
         
         **Turkiye Finans - Internet and Mobile Banking Backend**:
-          - Developed robust internet and mobile banking backend systems using MVC, WCF, and MSSQL
-          - Implemented comprehensive unit testing
+          - Developed robust banking backend systems using MVC, WCF, and MSSQL with comprehensive unit testing coverage
         
         Technologies: C#, .NET Core, Java, MVC, WCF, MSSQL, GitHub Copilot Enterprise, Prompt Engineering, Design Patterns (Repository, Unit of Work, Facade, Strategy), GitHub Actions, Azure DevOps
 
@@ -109,9 +108,9 @@ experiences:
       time: September 2022 - April 2024
       company: InsightSoftware, North Carolina (Remote)
       details: |
-        - Contributed to the architecture, design, and implementation of backend-heavy features using C#
-        - Worked in an international, remote-first environment
-        - Delivered scalable and maintainable solutions
+        - Contributed to architecture, design, and implementation of backend-focused features using C#
+        - Collaborated within an international, remote-first environment
+        - Delivered scalable, maintainable solutions
         
         Technologies: C#, .NET Core, Backend Architecture
 
@@ -119,19 +118,19 @@ experiences:
       time: September 2017 - September 2022
       company: OBSS, Istanbul
       details: |
-        Led technical modernization and architecture initiatives across major Turkish banks, with code review responsibilities and team mentorship:
+        Led technical modernization and architecture initiatives across major Turkish banks with code review responsibilities and team mentorship:
         
         **Halkbank - Mobile Banking Backend Transformation**:
           - Architected and led migration from legacy .NET Framework to Clean Architecture using .NET Core microservices
-          - Increased concurrent user capacity **5-6× per server** by implementing asynchronous programming patterns and thread optimization strategies
+          - Increased concurrent user capacity **5-6× per server** through asynchronous programming patterns and thread optimization strategies
           - Developed scalable REST APIs with EF Core and MSSQL, deployed via Azure DevOps CI/CD pipelines
           - Implemented Repository and Unit of Work patterns for maintainable data access layer
         
         **Turkiye Finans - Technical Leadership and Code Review**:
-          - Solely responsible for code review process for one development team, ensuring code quality, best practices, and architectural compliance
-          - Mentored and supervised development team, conducting regular code reviews and architectural guidance sessions
+          - Owned code review process for development team, ensuring code quality, best practices, and architectural compliance
+          - Mentored development team through regular code reviews and architectural guidance sessions
           - Developed enterprise-level corporate customer solutions using WinForms and WCF services
-          - Established coding standards and review guidelines that improved team code quality by reducing bug rates
+          - Established coding standards and review guidelines, improving code quality and reducing bug rates
         
         **Akbank - Payment System Full-Stack Development**:
           - Led Payment System campaign as Full-Stack Developer using TypeScript, Knockout.js, C#, and Java Spring
@@ -143,8 +142,8 @@ experiences:
       time: January 2017 - September 2017
       company: TUBITAK, Kocaeli
       details: |
-        - Used Java and APDU to write high-level security EAC SAC data to smartcard's passport chip
-        - Worked on secure government identification systems
+        - Utilized Java and APDU protocols to write high-level security EAC SAC data to smartcard passport chips
+        - Contributed to secure government identification systems
         
         Technologies: Java, APDU, Smartcard Technology
 
@@ -154,7 +153,7 @@ experiences:
       details: |
         - Transformed legacy systems to service-oriented architectures for CRM and Collections teams
         - Implemented MVVM pattern with WPF and WCF services
-        - Worked with Oracle 11g database and PL/SQL
+        - Developed database solutions using Oracle 11g and PL/SQL
         
         Technologies: .NET, MVVM, WPF, WCF, Oracle 11g, PL/SQL
 
@@ -162,8 +161,8 @@ experiences:
       time: December 2012 - June 2013
       company: VeriPark, Izmir
       details: |
-        - Developed add-on widgets using ASP.NET for Turkcell SharePoint environment
-        - Worked part-time while completing university studies
+        - Developed custom widgets using ASP.NET for Turkcell SharePoint environment
+        - Contributed part-time while completing university studies
         
         Technologies: ASP.NET, SharePoint
 
@@ -178,8 +177,8 @@ certifications:
       credentialurl: https://learn.microsoft.com/en-us/training/modules/introduction-to-github-copilot/
       credentialname: Microsoft Learn
       details: |
-        Completed official Microsoft training on GitHub Copilot, mastering AI-assisted development workflows, 
-        prompt engineering techniques, and best practices for enterprise-scale AI pair programming adoption.
+        Completed official Microsoft training on GitHub Copilot, covering AI-assisted development workflows, 
+        prompt engineering techniques, and enterprise-scale AI pair programming best practices.
 
     - name: Build Microservices with .NET and Amazon Web Services
       start: 2024
@@ -189,7 +188,7 @@ certifications:
       credentialurl:
       credentialname:
       details: |
-        Completed advanced training in building scalable microservices using .NET and AWS cloud platform, 
+        Completed advanced training in building scalable microservices using .NET and AWS, 
         covering distributed systems, containerization, and cloud deployment strategies.
 
     - name: React Nanodegree Program
@@ -200,8 +199,8 @@ certifications:
       credentialurl: https://www.udacity.com
       credentialname: Udacity
       details: |
-        Completed comprehensive React training program through Udacity, covering modern frontend 
-        development practices, state management, and component architecture.
+        Completed comprehensive React training covering modern frontend development practices, 
+        state management, and component architecture.
 
 skills:
   title: Skills and Proficiency
