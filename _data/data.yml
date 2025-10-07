@@ -32,7 +32,7 @@ sidebar:
   mastodon:
   hackerrank:
   leetcode:
-  pdf: # Add PDF link if you want
+  pdf: https://raw.githubusercontent.com/bkalafat/cv/main/downloads/Burak_Kalafat_CV.pdf
 
   languages:
     title: Languages

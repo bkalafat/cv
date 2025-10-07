@@ -69,8 +69,10 @@ jobs:
         run: |
           echo "Checking _site directory structure:"
           ls -la _site/
-          echo "Looking for print/index.html:"
-          find _site -name "index.html" -type f
+          echo "Looking for print directory:"
+          find _site -type d -name "print"
+          echo "Looking for all HTML files:"
+          find _site -name "*.html" -type f | head -20
           
       - name: Generate PDF from HTML (using print layout)
         run: |
