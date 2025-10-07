@@ -65,8 +65,8 @@ career-profile:
     clean architecture, and high-performance backend systems in the financial sector. Proven technical leader 
     who mentors teams, conducts code reviews, and drives architectural decisions.
     
-    **GitHub Copilot Enterprise evangelist** with unique expertise in AI-assisted development, having delivered 
-    organization-wide training and achieved **6–8× acceleration** on a **60,000-line COBOL-to-microservices 
+    **GitHub Copilot Enterprise champion** with unique expertise in AI-assisted development, having delivered 
+    organization-wide training and achieved **6-8× acceleration** on a **60,000-line COBOL-to-microservices 
     migration** in just 3 months. Expert in Spec-Driven Development (SDD) and prompt engineering for 
     enterprise-scale modernization.
     
@@ -80,9 +80,7 @@ education:
     - degree: BSc in Computer Engineering
       university: Ege University
       time: 2008 - 2013
-      details: |
-        Completed comprehensive computer engineering program covering software development, 
-        algorithms, data structures, and system design.
+      details:
 
 experiences:
   title: Experience
@@ -94,14 +92,14 @@ experiences:
         Leading technical modernization initiatives across major financial institutions, serving as technical advisor and GitHub Copilot evangelist:
         
         **Akbank - Merchant Payment System Modernization**:
-          - **Modernized 60,000 lines of legacy COBOL mainframe code** to modern C# and Java microservices architecture in 3 months, achieving 6–8× acceleration through AI-assisted development
-          - **Provided technical leadership** by guiding architectural decisions, establishing coding standards, and mentoring team members on Clean Architecture principles
-          - **Delivered 3 company-wide presentations** on GitHub Copilot Enterprise adoption to management teams, establishing best practices for AI-assisted development across the organization
-          - **Implemented Spec-Driven Development (SDD)** methodology using GitHub Copilot Ask/Edit modes, eliminating hallucinations and ensuring zero scope drift across end-to-end delivery cycles
+          - Modernized **60,000 lines** of legacy COBOL mainframe code to modern C# and Java microservices architecture in **3 months**, achieving **6-8× acceleration** through AI-assisted development
+          - Provided technical leadership by guiding architectural decisions, establishing coding standards, and mentoring team members on Clean Architecture principles
+          - Delivered **3 company-wide presentations** on GitHub Copilot Enterprise adoption to management teams, establishing best practices for AI-assisted development across the organization
+          - Implemented Spec-Driven Development (SDD) methodology using GitHub Copilot Ask/Edit modes, eliminating hallucinations and ensuring zero scope drift across end-to-end delivery cycles
           - Applied Repository, Unit of Work, Facade, and Strategy design patterns to ensure maintainable and testable codebase
         
-        **Turkiye Finans - Internet & Mobile Banking Backend**:
-          - Developed robust internet and mobile banking back-end systems using MVC, WCF, and MSSQL
+        **Turkiye Finans - Internet and Mobile Banking Backend**:
+          - Developed robust internet and mobile banking backend systems using MVC, WCF, and MSSQL
           - Implemented comprehensive unit testing
         
         Technologies: C#, .NET Core, Java, MVC, WCF, MSSQL, GitHub Copilot Enterprise, Prompt Engineering, Design Patterns (Repository, Unit of Work, Facade, Strategy), GitHub Actions, Azure DevOps
@@ -123,14 +121,14 @@ experiences:
         Led technical modernization and architecture initiatives across major Turkish banks, with code review responsibilities and team mentorship:
         
         **Halkbank - Mobile Banking Backend Transformation**:
-          - **Architected and led migration** from legacy .NET Framework to Clean Architecture using .NET Core microservices
-          - **Increased concurrent user capacity 5-6× per server** by implementing asynchronous programming patterns and thread optimization strategies
+          - Architected and led migration from legacy .NET Framework to Clean Architecture using .NET Core microservices
+          - Increased concurrent user capacity **5-6× per server** by implementing asynchronous programming patterns and thread optimization strategies
           - Developed scalable REST APIs with EF Core and MSSQL, deployed via Azure DevOps CI/CD pipelines
           - Implemented Repository and Unit of Work patterns for maintainable data access layer
         
-        **Turkiye Finans - Technical Leadership & Code Review**:
-          - **Solely responsible for code review process** for one development team, ensuring code quality, best practices, and architectural compliance
-          - **Mentored and supervised development team**, conducting regular code reviews and architectural guidance sessions
+        **Turkiye Finans - Technical Leadership and Code Review**:
+          - Solely responsible for code review process for one development team, ensuring code quality, best practices, and architectural compliance
+          - Mentored and supervised development team, conducting regular code reviews and architectural guidance sessions
           - Developed enterprise-level corporate customer solutions using WinForms and WCF services
           - Established coding standards and review guidelines that improved team code quality by reducing bug rates
         
@@ -171,7 +169,7 @@ experiences:
 certifications:
   title: Certifications
   list:
-    - name: GitHub Copilot Fundamentals - Understand the AI Pair Programmer
+    - name: Introduction to GitHub Copilot
       start: 2024
       end:
       organization: Microsoft Learn
@@ -182,7 +180,7 @@ certifications:
         Completed official Microsoft training on GitHub Copilot, mastering AI-assisted development workflows, 
         prompt engineering techniques, and best practices for enterprise-scale AI pair programming adoption.
 
-    - name: Build Microservices with .NET & Amazon Web Services
+    - name: Build Microservices with .NET and Amazon Web Services
       start: 2024
       end:
       organization: Udemy
@@ -193,12 +191,12 @@ certifications:
         Completed advanced training in building scalable microservices using .NET and AWS cloud platform, 
         covering distributed systems, containerization, and cloud deployment strategies.
 
-    - name: Certified React Nanodegree Program
+    - name: React Nanodegree Program
       start: 2020
       end:
       organization: Udacity
       credentialid:
-      credentialurl: www.udacity.com
+      credentialurl: https://www.udacity.com
       credentialname: Udacity
       details: |
         Completed comprehensive React training program through Udacity, covering modern frontend 
@@ -209,44 +207,44 @@ projects:
   intro: >
     Key technical achievements demonstrating expertise in modernization, architecture, and performance optimization:
   assignments:
-    - title: Akbank Merchant-Payment System Modernization (60K+ Lines)
+    - title: Akbank Merchant Payment System Modernization (60K+ Lines)
       link:
-      tagline: "Led modernization of 60,000 lines of COBOL mainframe code to C# and Java microservices in 3 months, achieving 6–8× acceleration through GitHub Copilot Enterprise and Spec-Driven Development"
+      tagline: "Led modernization of 60,000 lines of COBOL mainframe code to C# and Java microservices in 3 months, achieving 6-8× acceleration through GitHub Copilot Enterprise and Spec-Driven Development"
 
     - title: Halkbank Mobile Banking Performance Optimization
       link:
       tagline: "Architected Clean Architecture migration from legacy .NET, increased concurrent user capacity 5-6× per server through async programming and thread optimization"
 
-    - title: Turkiye Finans Code Quality & Team Leadership
+    - title: Turkiye Finans Code Quality and Team Leadership
       link:
-      tagline: "Led code review process and team mentorship, established architectural standards and improved code quality across internet & mobile banking back-ends"
+      tagline: "Led code review process and team mentorship, established architectural standards and improved code quality across internet and mobile banking backends"
 
 skills:
-  title: Skills & Proficiency
+  title: Skills and Proficiency
   toolset:
-    - name: C# & .NET Core Microservices
+    - name: C# and .NET Core Microservices
       level: 98%
 
-    - name: GitHub Copilot Enterprise & AI-Assisted Development
+    - name: GitHub Copilot Enterprise and AI-Assisted Development
       level: 95%
 
-    - name: Clean Architecture & Design Patterns
+    - name: Clean Architecture and Design Patterns
       level: 95%
 
-    - name: REST APIs & Asynchronous Programming
+    - name: REST APIs and Asynchronous Programming
       level: 95%
 
-    - name: EF Core & Database Design (MSSQL, Oracle)
+    - name: EF Core and Database Design (MSSQL, Oracle)
       level: 90%
 
-    - name: Azure DevOps & GitHub Actions CI/CD
+    - name: Azure DevOps and GitHub Actions CI/CD
       level: 90%
 
-    - name: Unit Testing & E2E Testing (Playwright)
+    - name: Unit Testing and E2E Testing (Playwright)
       level: 85%
 
-    - name: TypeScript, JavaScript & Java Spring
+    - name: TypeScript, JavaScript and Java Spring
       level: 85%
 
-    - name: Technical Leadership & Code Review
+    - name: Technical Leadership and Code Review
       level: 90%
