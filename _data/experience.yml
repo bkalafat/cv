@@ -9,9 +9,12 @@
     Contributing to modernization projects in leading financial institutions
   description: |
     - **Akbank**: Contributing to the modernization of merchant-payment systems, migrating core mainframe services to .NET and Java
+      - Evolved from GitHub Copilot Enterprise user to Prompt Engineer, mastering Ask/Edit modes for hallucination-free, spec-driven development workflows
+      - Accelerated legacy modernization projects 6–8× faster, reducing 7–8 month timelines to 3–4 weeks through advanced Copilot orchestration
+      - Eliminated technical debt in high-complexity codebases using Spec-Driven Development (SDD), ensuring zero scope drift across end-to-end delivery cycles
     - **Turkiye Finans**: Developed internet & mobile banking back-ends with MVC, WCF, and MSSQL
     
-    Technologies: C#, .NET, Java, MVC, WCF, MSSQL
+    Technologies: C#, .NET, Java, MVC, WCF, MSSQL, GitHub Copilot Enterprise, Prompt Engineering, Spec-Driven Development
 
 - layout: left
   company: InsightSoftware
