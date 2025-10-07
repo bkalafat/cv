@@ -3,8 +3,8 @@ title: Burak Kalafat - CV
 email: burakkalafat89@gmail.com
 description: >-
   Professional CV/Resume of Burak Kalafat - Expert Software Engineer specializing in .NET and backend development
-baseurl: "" # Will be updated with repo name, example: "/cv"
-url: "" # Will be updated with GitHub Pages URL, example: "https://bkalafat.github.io"
+baseurl: "/cv"
+url: "https://bkalafat.github.io"
 
 # Theme Settings
 remote_theme: sproogen/modern-resume-theme@version-2
