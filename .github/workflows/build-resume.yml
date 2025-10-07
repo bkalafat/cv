@@ -101,11 +101,12 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          git pull --rebase origin main
           mkdir -p downloads
           cp output/Burak_Kalafat_CV.pdf downloads/
-          git add downloads/ || true
-          git commit -m "Update generated PDF [skip ci]" || echo "No changes to commit"
-          git push || echo "No changes to push"
+          git add downloads/Burak_Kalafat_CV.pdf
+          git diff --staged --quiet || git commit -m "Auto-update: Generated PDF CV [skip ci]"
+          git push origin main || echo "Push failed, but artifact is uploaded"
 
   # Deploy job
   deploy:

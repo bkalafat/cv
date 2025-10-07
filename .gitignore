@@ -33,6 +33,10 @@ output/
 *.pdf
 *.docx
 
+# Allow generated CV files in downloads folder
+!downloads/*.pdf
+!downloads/*.docx
+
 # Temp files
 tmp/
 temp/
