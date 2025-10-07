@@ -32,7 +32,7 @@ sidebar:
   mastodon:
   hackerrank:
   leetcode:
-  pdf: https://raw.githubusercontent.com/bkalafat/cv/main/downloads/Burak_Kalafat_CV.pdf
+  pdf: # Generated client-side via PDF button
   docx: https://raw.githubusercontent.com/bkalafat/cv/main/downloads/Burak_Kalafat_CV.docx
 
   languages:

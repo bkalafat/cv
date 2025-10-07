@@ -1,10 +1,13 @@
 function print() {
-  const printWindow = window.open("/print", "_blank");
-  printWindow.onload = function () {
-    printWindow.print();
-    // Close the print window after a delay
-    setTimeout(() => printWindow.close(), 500);
-  };
+  const baseUrl = window.location.origin + "{{ site.baseurl }}";
+  const printWindow = window.open(baseUrl + "/print", "_blank");
+  if (printWindow) {
+    printWindow.onload = function () {
+      printWindow.print();
+      // Close the print window after a delay
+      setTimeout(() => printWindow.close(), 500);
+    };
+  }
 }
 
 function generatePDF() {
@@ -20,9 +23,10 @@ function generatePDF() {
       container.innerHTML = html;
 
       // Get name from the DOM (as defined in data.yml)
-      const name = document.querySelector(".name").textContent;
-      // Format filename: replace spaces with underscores and append _resume.pdf
-      const filename = `${name.replace(/\s+/g, "_")}_Resume.pdf`;
+      const nameElement = document.querySelector(".name");
+      const name = nameElement ? nameElement.textContent : "Burak_Kalafat";
+      // Format filename: replace spaces with underscores and append _CV.pdf
+      const filename = `${name.replace(/\s+/g, "_")}_CV.pdf`;
 
       // Configure pdf options
       const opt = {
