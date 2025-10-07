@@ -7,5 +7,5 @@ ruby ">= 2.7.0"
 gem "github-pages", "~> 231", group: :jekyll_plugins
 gem "webrick", "~> 1.8"
 
-# Modern Resume Theme
-gem "modern-resume-theme"
+# Use remote theme instead of gem (avoids version conflicts)
+gem "jekyll-remote-theme"

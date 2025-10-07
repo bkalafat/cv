@@ -7,7 +7,7 @@ baseurl: "/cv"
 url: "https://bkalafat.github.io"
 
 # Theme Settings
-remote_theme: sproogen/modern-resume-theme@version-2
+remote_theme: sproogen/modern-resume-theme
 
 # Personal Info
 name: Burak Kalafat
