@@ -30,10 +30,13 @@ about_profile_image: assets/images/profile.jpg
 about_content: |
   Senior .NET Developer with extensive experience in backend development and software architecture, 
   specializing in the financial sector. Proven ability to transition legacy systems to modern, 
-  scalable architectures and deliver clean, efficient code. Eager to continually learn and adopt new technologies.
+  scalable architectures and deliver clean, efficient code. **Expert in GitHub Copilot Enterprise 
+  (Prompt Engineering) with proven track record of accelerating modernization projects 6–8× faster 
+  through spec-driven, hallucination-free AI-assisted development.** Eager to continually learn and adopt new technologies.
   
   I am most skilled in: <mark>C#</mark>, <mark>.NET Core</mark>, <mark>REST APIs</mark>, <mark>EF Core</mark>, 
-  <mark>Oracle</mark>, <mark>MSSQL</mark>, <mark>TypeScript</mark>, and <mark>Java Spring</mark>
+  <mark>Oracle</mark>, <mark>MSSQL</mark>, <mark>TypeScript</mark>, <mark>Java Spring</mark>, 
+  <mark>GitHub Copilot Enterprise</mark>, and <mark>Prompt Engineering</mark>
 
 # Content configuration
 content:
