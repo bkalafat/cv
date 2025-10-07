@@ -38,11 +38,13 @@ jobs:
           
           ---
           
-          ## Professional Summary
+          ## Career Profile
           
-          Senior .NET Developer with extensive experience in backend development and software architecture, specializing in the financial sector. Proven ability to transition legacy systems to modern, scalable architectures and deliver clean, efficient code. **Expert in GitHub Copilot Enterprise (Prompt Engineering) with proven track record of accelerating modernization projects 6–8× faster through spec-driven, hallucination-free AI-assisted development.** Eager to continually learn and adopt new technologies.
+          **Expert Software Engineer** with 12+ years of experience specializing in large-scale legacy modernization, clean architecture, and high-performance backend systems within the financial sector. Proven technical leader adept at mentoring teams, conducting code reviews, and driving architectural decisions.
           
-          **Key Skills:** C#, .NET Core, REST APIs, EF Core, Oracle, MSSQL, TypeScript, Java Spring, GitHub Copilot Enterprise, Prompt Engineering, Spec-Driven Development, WCF, MVC, PL/SQL, Azure DevOps, Knockout.js, Agile, Scrum
+          **GitHub Copilot Enterprise champion** with specialized expertise in AI-assisted development, delivering organization-wide training and achieving **6-8× acceleration** on a **60,000-line COBOL-to-microservices migration** within 3 months. Expert in Spec-Driven Development (SDD) and prompt engineering for enterprise-scale modernization.
+          
+          Demonstrated impact through **performance optimization** (5-6× concurrent user capacity increase), **technical leadership** (code review ownership, team mentorship), and **architectural excellence** (Clean Architecture, design patterns, asynchronous programming).
           
           ---
           
@@ -51,21 +53,28 @@ jobs:
           ### Expert .NET Developer | Innovance (Remote)
           **May 2024 - Present** | Istanbul
           
-          - **Akbank**: Contributing to the modernization of merchant-payment systems, migrating core mainframe services to .NET and Java
-            - Evolved to GitHub Copilot Prompt Engineer, accelerating projects 6–8× faster using spec-driven, hallucination-free AI workflows
-            - Reduced 7–8 month modernization timelines to 3–4 weeks through advanced Copilot orchestration and technical debt elimination
-          - **Turkiye Finans**: Developed internet & mobile banking back-ends with MVC, WCF, and MSSQL
+          Lead technical modernization initiatives across major financial institutions, serving as technical advisor and GitHub Copilot champion:
           
-          *Technologies: C#, .NET, Java, GitHub Copilot Enterprise, Prompt Engineering, MVC, WCF, MSSQL*
+          **Akbank - Merchant Payment System Modernization**:
+          - Modernized **60,000 lines** of legacy COBOL mainframe code to modern C# and Java microservices in **3 months**, achieving **6-8× acceleration** through AI-assisted development
+          - Provided technical leadership through architectural guidance, coding standards establishment, and team mentorship on Clean Architecture principles
+          - Delivered **3 company-wide presentations** on GitHub Copilot Enterprise adoption to management, establishing AI-assisted development best practices organization-wide
+          - Implemented Spec-Driven Development (SDD) methodology using GitHub Copilot Ask/Edit modes, eliminating hallucinations and ensuring zero scope drift
+          - Applied Repository, Unit of Work, Facade, and Strategy design patterns to ensure maintainable, testable codebase
+          
+          **Turkiye Finans - Internet and Mobile Banking Backend**:
+          - Developed robust banking backend systems using MVC, WCF, and MSSQL with comprehensive unit testing coverage
+          
+          *Technologies: C#, .NET Core, Java, MVC, WCF, MSSQL, GitHub Copilot Enterprise, Prompt Engineering, Design Patterns, GitHub Actions, Azure DevOps*
           
           ---
           
           ### Senior .NET Developer | InsightSoftware (Remote)
           **September 2022 - April 2024** | North Carolina
           
-          - Contributed to the architecture, design, and implementation of backend-heavy features using C#
-          - Worked in an international, remote-first environment
-          - Delivered scalable and maintainable solutions
+          - Contributed to architecture, design, and implementation of backend-focused features using C#
+          - Collaborated within an international, remote-first environment
+          - Delivered scalable, maintainable solutions
           
           *Technologies: C#, .NET Core, Backend Architecture*
           
@@ -74,19 +83,33 @@ jobs:
           ### Senior .NET Developer | OBSS
           **September 2017 - September 2022** | Istanbul
           
-          - **Halkbank**: Upgraded Mobile Domain from legacy .NET to Clean Architecture using .NET Core. Developed REST APIs, implemented EF Core with MSSQL on Azure DevOps
-          - **Akbank**: Led Payment System campaign as a Full-Stack Developer using TypeScript, Knockout.js, C#, and Java Spring on Oracle 12c
-          - **Turkiye Finans Bank**: Developed corporate customer solutions using WinForms, WCF
+          Led technical modernization and architecture initiatives across major Turkish banks with code review responsibilities and team mentorship:
           
-          *Technologies: .NET Core, REST APIs, EF Core, MSSQL, TypeScript, Knockout.js, Java Spring, Oracle 12c, Azure DevOps*
+          **Halkbank - Mobile Banking Backend Transformation**:
+          - Architected and led migration from legacy .NET Framework to Clean Architecture using .NET Core microservices
+          - Increased concurrent user capacity **5-6× per server** through asynchronous programming patterns and thread optimization strategies
+          - Developed scalable REST APIs with EF Core and MSSQL, deployed via Azure DevOps CI/CD pipelines
+          - Implemented Repository and Unit of Work patterns for maintainable data access layer
+          
+          **Turkiye Finans - Technical Leadership and Code Review**:
+          - Owned code review process for development team, ensuring code quality, best practices, and architectural compliance
+          - Mentored development team through regular code reviews and architectural guidance sessions
+          - Developed enterprise-level corporate customer solutions using WinForms and WCF services
+          - Established coding standards and review guidelines, improving code quality and reducing bug rates
+          
+          **Akbank - Payment System Full-Stack Development**:
+          - Led Payment System campaign as Full-Stack Developer using TypeScript, Knockout.js, C#, and Java Spring
+          - Integrated frontend and backend systems with Oracle 12c database, ensuring transactional consistency
+          
+          *Technologies: .NET Core, REST APIs, EF Core, MSSQL, Clean Architecture, Asynchronous Programming, TypeScript, Knockout.js, Java Spring, Oracle 12c, Azure DevOps, Design Patterns*
           
           ---
           
           ### Java Developer | TUBITAK
           **January 2017 - September 2017** | Kocaeli
           
-          - Used Java and APDU to write high-level security EAC SAC data to smartcard's passport chip
-          - Worked on secure government identification systems
+          - Utilized Java and APDU protocols to write high-level security EAC SAC data to smartcard passport chips
+          - Contributed to secure government identification systems
           
           *Technologies: Java, APDU, Smartcard Technology*
           
@@ -97,7 +120,7 @@ jobs:
           
           - Transformed legacy systems to service-oriented architectures for CRM and Collections teams
           - Implemented MVVM pattern with WPF and WCF services
-          - Worked with Oracle 11g database and PL/SQL
+          - Developed database solutions using Oracle 11g and PL/SQL
           
           *Technologies: .NET, MVVM, WPF, WCF, Oracle 11g, PL/SQL*
           
@@ -106,7 +129,8 @@ jobs:
           ### Part-Time .NET Developer | VeriPark
           **December 2012 - June 2013** | Izmir
           
-          - Developed add-on widgets using ASP.NET for Turkcell SharePoint environment
+          - Developed custom widgets using ASP.NET for Turkcell SharePoint environment
+          - Contributed part-time while completing university studies
           
           *Technologies: ASP.NET, SharePoint*
           
@@ -114,16 +138,43 @@ jobs:
           
           ## Education
           
-          ### Bachelor of Science in Computer Engineering
-          **Ege University** | Izmir, Turkey  
-          **September 2008 - June 2013**
+          **BSc in Computer Engineering**  
+          Ege University | 2008 - 2013
           
           ---
           
-          ## Certifications & Professional Development
+          ## Certifications
           
-          - **Certified React Nanodegree Program** - Udacity (February 2020)
-          - **Build Microservices with .NET & Amazon Web Services** (February 2024)
+          - **Introduction to GitHub Copilot** - Microsoft Learn (2024)
+          - **Build Microservices with .NET and Amazon Web Services** - Udemy (2024)
+          - **React Nanodegree Program** - Udacity (2020)
+          
+          ---
+          
+          ## Skills & Proficiency
+          
+          - **C# and .NET Core Microservices** - Expert
+          - **GitHub Copilot Enterprise and AI-Assisted Development** - Expert
+          - **Clean Architecture and Design Patterns** - Expert
+          - **REST APIs and Asynchronous Programming** - Expert
+          - **EF Core and Database Design (MSSQL, Oracle)** - Advanced
+          - **Azure DevOps and GitHub Actions CI/CD** - Advanced
+          - **Unit Testing and E2E Testing (Playwright)** - Advanced
+          - **TypeScript, JavaScript and Java Spring** - Advanced
+          - **Technical Leadership and Code Review** - Advanced
+          
+          ---
+          
+          ## Languages
+          
+          - **Turkish** - Native
+          - **English** - Professional
+          
+          ---
+          
+          ## Interests
+          
+          Chess, LLM & RAG-based Enterprise Solutions, AI-Powered Customer Service Systems, Travel & Exploring Cultures
           
           ---
           
