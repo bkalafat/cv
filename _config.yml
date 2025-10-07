@@ -37,6 +37,12 @@ about_content: |
   I am most skilled in: <mark>C#</mark>, <mark>.NET Core</mark>, <mark>REST APIs</mark>, <mark>EF Core</mark>, 
   <mark>Oracle</mark>, <mark>MSSQL</mark>, <mark>TypeScript</mark>, <mark>Java Spring</mark>, 
   <mark>GitHub Copilot Enterprise</mark>, and <mark>Prompt Engineering</mark>
+  
+  ---
+  
+  📥 **Download Resume:** 
+  [📄 PDF](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_CV.pdf) | 
+  [📝 DOCX](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_CV.docx)
 
 # Content configuration
 content:
@@ -154,6 +160,18 @@ content:
         description: |
           Completed advanced training in building scalable microservices using .NET and AWS cloud platform, 
           covering distributed systems, containerization, and cloud deployment strategies.
+
+  - title: Download Resume
+    layout: text
+    content: |
+      Download my resume in different formats:
+      
+      - 📄 **[Download PDF](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_CV.pdf)** - Direct download
+      - 📝 **[Download DOCX](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_CV.docx)** - Direct download
+      - 🖨️ **Print to PDF** - Use `Ctrl+P` (Windows) or `Cmd+P` (Mac) and save as PDF
+      - 📦 **[View All Versions](https://github.com/bkalafat/cv/actions)** - Download from GitHub Actions artifacts
+      
+      *Note: Files are automatically updated after each commit. Direct download links always point to the latest version.*
 
 # Build settings
 markdown: kramdown

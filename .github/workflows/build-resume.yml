@@ -76,6 +76,17 @@ jobs:
           name: cv-pdf
           path: output/Burak_Kalafat_CV.pdf
           retention-days: 90
+          
+      - name: Commit PDF to repository
+        if: github.event_name == 'push'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          mkdir -p downloads
+          cp output/Burak_Kalafat_CV.pdf downloads/
+          git add downloads/ || true
+          git commit -m "Update generated PDF [skip ci]" || echo "No changes to commit"
+          git push || echo "No changes to push"
 
   # Deploy job
   deploy:
