@@ -1,0 +1,19 @@
+# Projects/Certifications Section
+- layout: top-middle
+  name: Certified React Nanodegree Program
+  link: https://www.udacity.com
+  dates: February 2020
+  quote: >
+    Advanced React development certification
+  description: |
+    Completed comprehensive React training program through Udacity, covering modern frontend 
+    development practices, state management, and component architecture.
+
+- layout: top-middle
+  name: Build Microservices with .NET & Amazon Web Services
+  dates: February 2024
+  quote: >
+    Cloud-native microservices architecture
+  description: |
+    Completed advanced training in building scalable microservices using .NET and AWS cloud platform, 
+    covering distributed systems, containerization, and cloud deployment strategies.

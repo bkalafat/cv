@@ -1,0 +1,106 @@
+# Site Settings
+title: Burak Kalafat - CV
+email: burakkalafat89@gmail.com
+description: >-
+  Professional CV/Resume of Burak Kalafat - Expert Software Engineer specializing in .NET and backend development
+baseurl: "" # Will be updated with repo name, example: "/cv"
+url: "" # Will be updated with GitHub Pages URL, example: "https://bkalafat.github.io"
+
+# Theme Settings
+remote_theme: sproogen/modern-resume-theme@version-2
+
+# Personal Info
+name: Burak Kalafat
+title: "Expert Software Engineer"
+email: burakkalafat89@gmail.com
+phone: "+905403506161"
+website: https://github.com/bkalafat
+
+# Social Links
+github_username: bkalafat
+linkedin_username: bkalafat
+
+# SEO Settings
+twitter_username: # Add if you have Twitter
+og_image: assets/images/profile.jpg
+lang: en
+
+# About Section
+about_profile_image: assets/images/profile.jpg
+about_content: |
+  Senior .NET Developer with extensive experience in backend development and software architecture, 
+  specializing in the financial sector. Proven ability to transition legacy systems to modern, 
+  scalable architectures and deliver clean, efficient code. Eager to continually learn and adopt new technologies.
+  
+  I am most skilled in: <mark>C#</mark>, <mark>.NET Core</mark>, <mark>REST APIs</mark>, <mark>EF Core</mark>, 
+  <mark>Oracle</mark>, <mark>MSSQL</mark>, <mark>TypeScript</mark>, and <mark>Java Spring</mark>
+
+# Content configuration
+content:
+  - title: Experience
+    layout: list
+    content:
+      - layout: left
+        border: weak
+        title: Experience Section
+        sub_title: Work History
+        caption: Professional Experience
+        description: |
+          See _data/experience.yml for details
+          
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        border: weak
+        title: Education Section
+        description: |
+          See _data/education.yml for details
+
+  - title: Certifications & Projects
+    layout: list
+    content:
+      - layout: top-middle
+        border: weak
+        title: Professional Development
+        description: |
+          See _data/projects.yml for details
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - PLAN.md
+  - BURAK_KALAFAT.pdf
+  - BURAK_KALAFAT.docx
+  - output/
+  - "*.gem"
+  - "*.gemspec"
+  - LICENSE
+  - package.json
+  - package-lock.json
+
+# Dark Mode (optional)
+darkmode: false
+
+# Footer
+footer_show_references: true
+references_title: References available upon request
+
+# Google Analytics (optional)
+# google_analytics: "UA-XXXXXXX-X"
+
+# Additional settings for modern-resume-theme
+sass:
+  sass_dir: _sass
+  style: compressed

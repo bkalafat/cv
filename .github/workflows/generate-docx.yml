@@ -1,0 +1,174 @@
+name: Generate DOCX Resume
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-docx:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Install Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+          
+      - name: Create Markdown Resume
+        run: |
+          cat > resume.md << 'EOF'
+          ---
+          title: "Burak Kalafat - CV"
+          author: "Burak Kalafat"
+          ---
+          
+          # BURAK KALAFAT
+          ## Expert Software Engineer
+          
+          **Email:** burakkalafat89@gmail.com  
+          **Phone:** +905403506161  
+          **GitHub:** https://github.com/bkalafat  
+          **LinkedIn:** https://www.linkedin.com/in/bkalafat/
+          
+          ---
+          
+          ## Professional Summary
+          
+          Senior .NET Developer with extensive experience in backend development and software architecture, specializing in the financial sector. Proven ability to transition legacy systems to modern, scalable architectures and deliver clean, efficient code. Eager to continually learn and adopt new technologies.
+          
+          **Key Skills:** C#, .NET Core, REST APIs, EF Core, Oracle, MSSQL, TypeScript, Java Spring, WCF, MVC, PL/SQL, Azure DevOps, Knockout.js, Agile, Scrum
+          
+          ---
+          
+          ## Work Experience
+          
+          ### Expert .NET Developer | Innovance (Remote)
+          **May 2024 - Present** | Istanbul
+          
+          - **Akbank**: Contributing to the modernization of merchant-payment systems, migrating core mainframe services to .NET and Java
+          - **Turkiye Finans**: Developed internet & mobile banking back-ends with MVC, WCF, and MSSQL
+          
+          *Technologies: C#, .NET, Java, MVC, WCF, MSSQL*
+          
+          ---
+          
+          ### Senior .NET Developer | InsightSoftware (Remote)
+          **September 2022 - April 2024** | North Carolina
+          
+          - Contributed to the architecture, design, and implementation of backend-heavy features using C#
+          - Worked in an international, remote-first environment
+          - Delivered scalable and maintainable solutions
+          
+          *Technologies: C#, .NET Core, Backend Architecture*
+          
+          ---
+          
+          ### Senior .NET Developer | OBSS
+          **September 2017 - September 2022** | Istanbul
+          
+          - **Halkbank**: Upgraded Mobile Domain from legacy .NET to Clean Architecture using .NET Core. Developed REST APIs, implemented EF Core with MSSQL on Azure DevOps
+          - **Akbank**: Led Payment System campaign as a Full-Stack Developer using TypeScript, Knockout.js, C#, and Java Spring on Oracle 12c
+          - **Turkiye Finans Bank**: Developed corporate customer solutions using WinForms, WCF
+          
+          *Technologies: .NET Core, REST APIs, EF Core, MSSQL, TypeScript, Knockout.js, Java Spring, Oracle 12c, Azure DevOps*
+          
+          ---
+          
+          ### Java Developer | TUBITAK
+          **January 2017 - September 2017** | Kocaeli
+          
+          - Used Java and APDU to write high-level security EAC SAC data to smartcard's passport chip
+          - Worked on secure government identification systems
+          
+          *Technologies: Java, APDU, Smartcard Technology*
+          
+          ---
+          
+          ### .NET Developer | VakıfBank
+          **August 2013 - February 2017** | Istanbul
+          
+          - Transformed legacy systems to service-oriented architectures for CRM and Collections teams
+          - Implemented MVVM pattern with WPF and WCF services
+          - Worked with Oracle 11g database and PL/SQL
+          
+          *Technologies: .NET, MVVM, WPF, WCF, Oracle 11g, PL/SQL*
+          
+          ---
+          
+          ### Part-Time .NET Developer | VeriPark
+          **December 2012 - June 2013** | Izmir
+          
+          - Developed add-on widgets using ASP.NET for Turkcell SharePoint environment
+          
+          *Technologies: ASP.NET, SharePoint*
+          
+          ---
+          
+          ## Education
+          
+          ### Bachelor of Science in Computer Engineering
+          **Ege University** | Izmir, Turkey  
+          **September 2008 - June 2013**
+          
+          ---
+          
+          ## Certifications & Professional Development
+          
+          - **Certified React Nanodegree Program** - Udacity (February 2020)
+          - **Build Microservices with .NET & Amazon Web Services** (February 2024)
+          
+          ---
+          
+          *References available upon request*
+          EOF
+          
+      - name: Generate DOCX from Markdown
+        run: |
+          mkdir -p output
+          pandoc resume.md \
+            -o output/Burak_Kalafat_CV.docx \
+            --from markdown \
+            --to docx \
+            --standalone \
+            --reference-doc=reference.docx 2>/dev/null || \
+          pandoc resume.md \
+            -o output/Burak_Kalafat_CV.docx \
+            --from markdown \
+            --to docx \
+            --standalone
+            
+      - name: Generate PDF from Markdown (Bonus)
+        run: |
+          pandoc resume.md \
+            -o output/Burak_Kalafat_CV_Pandoc.pdf \
+            --from markdown \
+            --to pdf \
+            --pdf-engine=xelatex \
+            -V geometry:margin=1in
+            
+      - name: Upload DOCX artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-docx
+          path: |
+            output/Burak_Kalafat_CV.docx
+            output/Burak_Kalafat_CV_Pandoc.pdf
+          retention-days: 90
+          
+      - name: Commit generated files (optional)
+        if: github.event_name == 'push'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          mkdir -p downloads
+          cp output/Burak_Kalafat_CV.docx downloads/
+          cp output/Burak_Kalafat_CV_Pandoc.pdf downloads/
+          git add downloads/ || true
+          git commit -m "Update generated CV files [skip ci]" || echo "No changes to commit"
+          git push || echo "No changes to push"
