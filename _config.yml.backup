@@ -41,7 +41,7 @@ about_content: |
   ---
   
   📥 **Download Resume:**  
-  [📄 CV (PDF)](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_Professional_CV.pdf) | 
+  [📄 Professional CV (PDF)](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_Professional_CV.pdf) | 
   [🤖 ATS CV (PDF)](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_ATS_CV.pdf)
 
 # Content configuration
@@ -144,11 +144,8 @@ content:
     content: |
       Download my resume in different formats:
       
-      - 📄 **[Download PDF](https://github.com/bkalafat/cv/actions)** - Latest version from GitHub Actions
-      - 📝 **[Download DOCX](https://github.com/bkalafat/cv/actions)** - Latest version from GitHub Actions
-      - 🖨️ **Print to PDF** - Use `Ctrl+P` (Windows) or `Cmd+P` (Mac) and save as PDF
-      
-      *Note: Click the links above to go to GitHub Actions, then download the latest artifacts (cv-pdf or cv-docx).*
+      - 📄 **[Professional CV (PDF)](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_Professional_CV.pdf)** - Beautiful design with sidebar
+      - 🤖 **[ATS-Optimized CV (PDF)](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_ATS_CV.pdf)** - Plain format for ATS systems
 
   - title: Certifications
     layout: list

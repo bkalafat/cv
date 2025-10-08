@@ -1,22 +1,16 @@
 # CV Downloads
 
-This folder contains automatically generated CV files.
+This folder contains CV files in different formats.
 
 ## 📄 Available Files
 
-- **Burak_Kalafat_CV.docx** - Microsoft Word format (auto-generated on every push)
-
-## 🤖 How It Works
-
-The `generate-docx.yml` GitHub Actions workflow automatically:
-1. Converts CV content from Markdown to DOCX format using Pandoc
-2. Saves the generated file to this `downloads/` folder
-3. Commits it back to the repository
+- **Burak_Kalafat_Professional_CV.pdf** - Professional CV with beautiful design and sidebar
+- **Burak_Kalafat_ATS_CV.pdf** - ATS-optimized CV with plain format for applicant tracking systems
 
 ## 📥 Direct Download Links
 
-- [Download CV (DOCX)](https://raw.githubusercontent.com/bkalafat/cv/main/downloads/Burak_Kalafat_CV.docx)
-- [Download CV (PDF)](https://raw.githubusercontent.com/bkalafat/cv/main/downloads/Burak_Kalafat_CV.pdf) _(if available)_
+- [Download Professional CV (PDF)](https://raw.githubusercontent.com/bkalafat/cv/main/downloads/Burak_Kalafat_Professional_CV.pdf)
+- [Download ATS CV (PDF)](https://raw.githubusercontent.com/bkalafat/cv/main/downloads/Burak_Kalafat_ATS_CV.pdf)
 
 ## 🔄 Updates
 
