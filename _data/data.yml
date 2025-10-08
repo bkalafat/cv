@@ -32,8 +32,8 @@ sidebar:
   mastodon:
   hackerrank:
   leetcode:
-  pdf: # Generated client-side via PDF button
-  docx: https://raw.githubusercontent.com/bkalafat/cv/main/downloads/Burak_Kalafat_CV.docx
+  pdf: # PDF button (top-right)
+  docx: # DOCX button (top-right)
 
   languages:
     title: Languages
