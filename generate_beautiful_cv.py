@@ -342,7 +342,7 @@ def generate_modern_cv():
     # Professional Profile (renamed from 'Professional Summary' for better tone)
     pdf_canvas.setFillColor(SIDEBAR_COLOR)
     pdf_canvas.setFont('Arial-Bold', 15)
-    pdf_canvas.drawString(content_x, y_position, "PROFESSIONAL PROFILE")
+    pdf_canvas.drawString(content_x, y_position, "PROFESSIONAL SUMMARY")
     
     # Thicker accent line for better visual hierarchy
     pdf_canvas.setStrokeColor(ACCENT_COLOR)
