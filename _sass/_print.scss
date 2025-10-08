@@ -24,17 +24,8 @@
   .sidebar-wrapper {
     position: static;
     //  float: right;
-    width: 30%;
-  background-color: $theme-color;
-  color: #ffffff;
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
-  }
-
-  .main-wrapper {
-    width: 70%;
-    display: inline-block;
-    vertical-align: top;
+    //  width: 40%;
+    -webkit-print-color-adjust: exact;
   }
 
   .remove-container.container-block {
