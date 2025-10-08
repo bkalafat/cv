@@ -158,6 +158,14 @@ content:
           covering distributed systems, containerization, and cloud deployment strategies.
 
       - layout: left
+        name: IELTS (Band 7)
+        dates: May 2023
+        description: |
+          British Council certified English language proficiency test. Band 7 demonstrates 
+          "Good User" level competency, suitable for professional and academic environments.
+          Credential ID: 23TR003024KALB002G
+
+      - layout: left
         name: Certified React Nanodegree Program
         link: https://www.udacity.com
         dates: February 2020
