@@ -1,0 +1,212 @@
+%-------------------------
+% Resume with Photo - Based on Jake's Resume Template
+% Modified for: Burak Kalafat
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{tikz}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING WITH PHOTO-----------------
+\begin{minipage}[t]{0.15\textwidth}
+\vspace{0pt}
+% Circular photo
+\begin{tikzpicture}
+    \clip (0,0) circle (1.5cm);
+    \node at (0,0) {\includegraphics[width=3cm]{profile.png}};
+\end{tikzpicture}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.80\textwidth}
+\vspace{0pt}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/bkalafat}{\Large Burak Kalafat}} & Email: \href{mailto:burakkalafat89@gmail.com}{burakkalafat89@gmail.com} \\
+  \href{https://github.com/bkalafat}{github.com/bkalafat} & Mobile: +90-540-350-6161 \\
+  \href{https://linkedin.com/in/bkalafat}{linkedin.com/in/bkalafat} & Istanbul, Turkey \\
+\end{tabular*}
+\end{minipage}
+
+\vspace{-10pt}
+
+%-----------SUMMARY-----------------
+\section{Professional Summary}
+  \small{Senior Software Engineer (Backend, .NET) with 12+ years specializing in \textbf{legacy modernization}, \textbf{clean architecture}, and \textbf{high-performance backend systems} in financial services. \textbf{GitHub Copilot Enterprise champion} achieving \textbf{6-8× acceleration} on 60,000-line COBOL-to-microservices migration. Proven technical leader in code review, mentorship, and architectural excellence.}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Expert .NET Developer}{May 2024 -- Present}
+      {Innovance}{Istanbul (Remote)}
+      \resumeItemListStart
+        \resumeItem{\textbf{Akbank - Merchant Payment Modernization}: Migrated 60,000 lines of legacy COBOL to C\#/.NET and Java microservices in 3 months, achieving \textbf{6-8× acceleration} through AI-assisted development}
+        \resumeItem{Evolved from GitHub Copilot Enterprise user to \textbf{Prompt Engineer}, mastering Ask/Edit modes for hallucination-free, spec-driven workflows}
+        \resumeItem{Delivered \textbf{3 company-wide presentations} on GitHub Copilot adoption to management, establishing organization-wide AI development best practices}
+        \resumeItem{Implemented Spec-Driven Development (SDD) methodology, eliminating technical debt and ensuring zero scope drift across delivery cycles}
+        \resumeItem{\textbf{Turkiye Finans}: Developed internet \& mobile banking backends with MVC, WCF, MSSQL, and comprehensive unit testing}
+        \resumeItem{\textbf{Technologies}: C\#, .NET Core, Java, GitHub Copilot Enterprise, Prompt Engineering, Design Patterns, Azure DevOps}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior .NET Developer}{September 2022 -- April 2024}
+      {InsightSoftware}{North Carolina (Remote)}
+      \resumeItemListStart
+        \resumeItem{Contributed to architecture, design, and implementation of backend-focused features using C\# in international team}
+        \resumeItem{Delivered scalable and maintainable solutions following clean architecture principles}
+        \resumeItem{\textbf{Technologies}: C\#, .NET Core, Backend Architecture}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior .NET Developer}{September 2017 -- September 2022}
+      {OBSS}{Istanbul}
+      \resumeItemListStart
+        \resumeItem{\textbf{Halkbank - Mobile Banking Transformation}: Architected migration from legacy .NET to Clean Architecture using .NET Core microservices}
+        \resumeItem{Increased concurrent user capacity \textbf{5-6× per server} through asynchronous programming and thread optimization}
+        \resumeItem{Developed scalable REST APIs with EF Core and MSSQL, deployed via Azure DevOps CI/CD pipelines}
+        \resumeItem{\textbf{Turkiye Finans - Technical Leadership}: Owned code review process, mentored team through architectural guidance sessions}
+        \resumeItem{Established coding standards and review guidelines, improving code quality and reducing bug rates}
+        \resumeItem{\textbf{Akbank - Payment System}: Led full-stack development using TypeScript, Knockout.js, C\#, Java Spring on Oracle 12c}
+        \resumeItem{\textbf{Technologies}: .NET Core, REST APIs, EF Core, Clean Architecture, TypeScript, Java Spring, Azure DevOps}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Java Developer}{January 2017 -- September 2017}
+      {TUBITAK}{Kocaeli}
+      \resumeItemListStart
+        \resumeItem{Utilized Java and APDU protocols to write high-level security EAC SAC data to smartcard passport chips}
+        \resumeItem{Contributed to secure government identification systems}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {.NET Developer}{August 2013 -- February 2017}
+      {VakıfBank}{Istanbul}
+      \resumeItemListStart
+        \resumeItem{Transformed legacy systems to service-oriented architectures for CRM and Collections teams}
+        \resumeItem{Implemented MVVM pattern with WPF and WCF services, developed solutions using Oracle 11g and PL/SQL}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Ege University}{Izmir, Turkey}
+      {Bachelor of Science in Computer Engineering}{September 2008 -- June 2013}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages \& Frameworks}{: C\#, .NET Core, Java, TypeScript, JavaScript, Python, WPF, WCF, MVC, Spring} \\
+     \textbf{AI \& Modern Tools}{: GitHub Copilot Enterprise, Prompt Engineering, Spec-Driven Development (SDD)} \\
+     \textbf{Architecture \& Patterns}{: Clean Architecture, Microservices, Repository, Unit of Work, Facade, Strategy} \\
+     \textbf{Backend \& APIs}{: REST APIs, EF Core, Asynchronous Programming, Performance Optimization} \\
+     \textbf{Databases}{: MSSQL, Oracle 12c/11g, Azure SQL, PL/SQL} \\
+     \textbf{DevOps \& Cloud}{: Azure DevOps, GitHub Actions, CI/CD, Docker, AWS basics} \\
+     \textbf{Testing}{: Unit Testing, E2E Testing (Playwright), TDD} \\
+     \textbf{Leadership}{: Code Review, Technical Mentorship, Architectural Decision Making}
+    }}
+ \end{itemize}
+
+%-----------CERTIFICATIONS-----------------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Introduction to GitHub Copilot} $|$ \emph{Microsoft Learn}}{2024}
+    \resumeProjectHeading
+        {\textbf{Build Microservices with .NET and AWS} $|$ \emph{Udemy}}{2024}
+    \resumeProjectHeading
+        {\textbf{React Nanodegree Program} $|$ \emph{Udacity}}{2020}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

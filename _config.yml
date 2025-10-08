@@ -5,7 +5,7 @@
 
 # Site configuration
 title: Burak Kalafat - CV
-description: Professional CV/Resume of Burak Kalafat - Expert Software Engineer specializing in .NET and backend development
+description: Professional CV/Resume of Burak Kalafat - Senior Software Engineer (Backend, .NET) specializing in .NET and backend development
 baseurl: "/cv" # the subpath of your site, e.g. /blog
 url: "https://bkalafat.github.io" # the base hostname & protocol for your site
 

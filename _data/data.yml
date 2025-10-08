@@ -9,7 +9,7 @@ sidebar:
 
   # Profile information
   name: Burak Kalafat
-  tagline: Expert Software Engineer
+  tagline: Senior Software Engineer (Backend, .NET)
   avatar: profile.png # place a 100x100 picture inside /assets/images/ folder
 
   # Sidebar links
@@ -60,15 +60,15 @@ sidebar:
         link:
 
 career-profile:
-  title: Career Profile
+  title: Professional Profile
   summary: |
-    **Expert Software Engineer** with 12+ years of experience specializing in large-scale legacy modernization, 
+    **Senior Software Engineer (Backend, .NET)** with 12+ years of experience specializing in large-scale legacy modernization, 
     clean architecture, and high-performance backend systems within the financial sector. Proven technical leader 
     adept at mentoring teams, conducting code reviews, and driving architectural decisions.
     
     **GitHub Copilot Enterprise champion** with specialized expertise in AI-assisted development, delivering 
-    organization-wide training and achieving **6-8× acceleration** on a **60,000-line COBOL-to-microservices 
-    migration** within 3 months. Expert in Spec-Driven Development (SDD) and prompt engineering for 
+    organization-wide training and achieving **6-8× acceleration** on large-scale legacy modernization projects 
+    within 3 months. Expert in Spec-Driven Development (SDD) and prompt engineering for 
     enterprise-scale modernization.
     
     Demonstrated impact through **performance optimization** (5-6× concurrent user capacity increase), 
@@ -86,17 +86,17 @@ education:
 experiences:
   title: Experience
   info:
-    - role: Expert .NET Developer
+    - role: Senior Software Engineer (Backend, .NET)
       time: May 2024 - Present
       company: Innovance, Istanbul (Remote)
       details: |
         Lead technical modernization initiatives across major financial institutions, serving as technical advisor and GitHub Copilot champion:
         
-        **Akbank - Merchant Payment System Modernization**:
-          - Modernized **60,000 lines** of legacy COBOL mainframe code to modern C# and Java microservices in **3 months**, achieving **6-8× acceleration** through AI-assisted development
+        **Akbank - Large-Scale Legacy Modernization**:
+          - Led large-scale legacy COBOL mainframe modernization to modern C# and Java backend services in **3 months**, achieving **6-8× acceleration** through AI-assisted development
           - Provided technical leadership through architectural guidance, coding standards establishment, and team mentorship on Clean Architecture principles
           - Delivered **3 company-wide presentations** on GitHub Copilot Enterprise adoption to management, establishing AI-assisted development best practices organization-wide
-          - Implemented Spec-Driven Development (SDD) methodology using GitHub Copilot Ask/Edit modes, eliminating hallucinations and ensuring zero scope drift
+          - Implemented Spec-Driven Development (SDD) methodology using GitHub Copilot Agent and custom modes, eliminating hallucinations and ensuring zero scope drift
           - Applied Repository, Unit of Work, Facade, and Strategy design patterns to ensure maintainable, testable codebase
         
         **Turkiye Finans - Internet and Mobile Banking Backend**:
@@ -104,7 +104,7 @@ experiences:
         
         Technologies: C#, .NET Core, Java, MVC, WCF, MSSQL, GitHub Copilot Enterprise, Prompt Engineering, Design Patterns (Repository, Unit of Work, Facade, Strategy), GitHub Actions, Azure DevOps
 
-    - role: Senior .NET Developer
+    - role: Senior Software Engineer (Backend, .NET)
       time: September 2022 - April 2024
       company: InsightSoftware, North Carolina (Remote)
       details: |
@@ -114,14 +114,14 @@ experiences:
         
         Technologies: C#, .NET Core, Backend Architecture
 
-    - role: Senior .NET Developer
+    - role: Senior Software Engineer (Backend, .NET)
       time: September 2017 - September 2022
       company: OBSS, Istanbul
       details: |
         Led technical modernization and architecture initiatives across major Turkish banks with code review responsibilities and team mentorship:
         
         **Halkbank - Mobile Banking Backend Transformation**:
-          - Architected and led migration from legacy .NET Framework to Clean Architecture using .NET Core microservices
+          - Architected and led migration from legacy .NET Framework to Clean Architecture using .NET Core
           - Increased concurrent user capacity **5-6× per server** through asynchronous programming patterns and thread optimization strategies
           - Developed scalable REST APIs with EF Core and MSSQL, deployed via Azure DevOps CI/CD pipelines
           - Implemented Repository and Unit of Work patterns for maintainable data access layer
@@ -205,7 +205,7 @@ certifications:
 skills:
   title: Skills and Proficiency
   toolset:
-    - name: C# and .NET Core Microservices
+    - name: C# and .NET Core
       level: 98%
 
     - name: GitHub Copilot Enterprise and AI-Assisted Development
@@ -231,3 +231,6 @@ skills:
 
     - name: Technical Leadership and Code Review
       level: 90%
+
+    - name: Microservices Architecture (Training)
+      level: 70%

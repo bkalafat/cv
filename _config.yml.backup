@@ -2,7 +2,7 @@
 title: Burak Kalafat - CV
 email: burakkalafat89@gmail.com
 description: >-
-  Professional CV/Resume of Burak Kalafat - Expert Software Engineer specializing in .NET and backend development
+  Professional CV/Resume of Burak Kalafat - Senior Software Engineer (Backend, .NET) specializing in .NET and backend development
 baseurl: "/cv"
 url: "https://bkalafat.github.io"
 
@@ -11,7 +11,7 @@ remote_theme: sproogen/modern-resume-theme
 
 # Personal Info
 name: Burak Kalafat
-title: "Expert Software Engineer"
+title: "Senior Software Engineer (Backend, .NET)"
 email: burakkalafat89@gmail.com
 phone: "+905403506161"
 website: https://github.com/bkalafat
@@ -40,8 +40,9 @@ about_content: |
   
   ---
   
-  📥 **Download Resume:** 
-  [📄 PDF](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_CV.pdf) | 
+  📥 **Download Resume:**  
+  [📄 Professional CV (PDF)](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_Professional_CV.pdf) | 
+  [🤖 ATS CV (PDF)](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_ATS_CV.pdf) | 
   [📝 DOCX](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_CV.docx)
 
 # Content configuration

@@ -20,9 +20,9 @@ Visit the live CV at: **[https://bkalafat.github.io/cv](https://bkalafat.github.
 
 ## 📥 Download Resume
 
-- **PDF**: [Download CV (PDF)](https://github.com/bkalafat/cv/actions) - Available in Actions artifacts
-- **DOCX**: [Download CV (DOCX)](https://github.com/bkalafat/cv/actions) - Available in Actions artifacts
-- **Web**: Print to PDF directly from the website
+📄 **[Download Professional CV (PDF)](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_Professional_CV.pdf)** - Beautiful design with sidebar  
+🤖 **[Download ATS-Optimized CV (PDF)](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_ATS_CV.pdf)** - Plain format for ATS systems  
+📝 **[Download CV (DOCX)](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_CV.docx)** - Editable Word format
 
 ## 🛠️ Technology Stack
 

@@ -47,6 +47,20 @@
   }
 }
 
+@media (min-width: 992px) {
+  .sidebar-wrapper {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .main-wrapper {
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
 .skillset .level-bar-inner {
   width: auto;
   -webkit-transition: width 2s ease-in-out;

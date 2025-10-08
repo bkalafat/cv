@@ -1,17 +1,15 @@
 # Experience Section
-- layout: left
   company: Innovance
   link: 
-  job_title: Expert .NET Developer
+  job_title: Senior Software Engineer (Backend, .NET)
   dates: May 2024 - Present
   location: Istanbul (Remote)
   quote: >
     Contributing to modernization projects in leading financial institutions
   description: |
-    - **Akbank**: Contributing to the modernization of merchant-payment systems, migrating core mainframe services to .NET and Java
-      - Evolved from GitHub Copilot Enterprise user to Prompt Engineer, mastering Ask/Edit modes for hallucination-free, spec-driven development workflows
-      - Accelerated legacy modernization projects 6–8× faster, reducing 7–8 month timelines to 3–4 weeks through advanced Copilot orchestration
-      - Eliminated technical debt in high-complexity codebases using Spec-Driven Development (SDD), ensuring zero scope drift across end-to-end delivery cycles
+    - **Akbank**: Led large-scale legacy COBOL modernization to modern .NET/Java backend services, achieving **6-8× faster** delivery (3-4 weeks vs 7-8 months)
+    - Mastered **GitHub Copilot Enterprise** as Prompt Engineer, implementing hallucination-free, spec-driven workflows using Agent and custom modes
+    - Eliminated technical debt using **Spec-Driven Development (SDD)**, ensuring zero scope drift across end-to-end delivery cycles
     - **Turkiye Finans**: Developed internet & mobile banking back-ends with MVC, WCF, and MSSQL
     
     Technologies: C#, .NET, Java, MVC, WCF, MSSQL, GitHub Copilot Enterprise, Prompt Engineering, Spec-Driven Development
@@ -19,66 +17,62 @@
 - layout: left
   company: InsightSoftware
   link: 
-  job_title: Senior .NET Developer
+  job_title: Senior Software Engineer (Backend, .NET)
   dates: September 2022 - April 2024
   location: North Carolina (Remote)
   description: |
-    - Contributed to the architecture, design, and implementation of backend-heavy features using C#
-    - Worked in an international, remote-first environment
-    - Delivered scalable and maintainable solutions
+    - Architected and implemented backend-heavy features using **C# and .NET Core** in international remote-first team
+    - Delivered scalable, maintainable solutions following **Clean Architecture** principles
+    - Contributed to high-performance financial software serving enterprise clients
     
     Technologies: C#, .NET Core, Backend Architecture
 
 - layout: left
   company: OBSS
   link: 
-  job_title: Senior .NET Developer
+  job_title: Senior Software Engineer (Backend, .NET)
   dates: September 2017 - September 2022
   location: Istanbul
   quote: >
     Leading modernization initiatives across major Turkish banks
   description: |
-    - **Halkbank**: Upgraded Mobile Domain from legacy .NET to Clean Architecture using .NET Core
-      - Developed REST APIs, implemented EF Core with MSSQL on Azure DevOps
-    - **Akbank**: Led Payment System campaign as a Full-Stack Developer 
-      - Used TypeScript, Knockout.js, C#, and Java Spring on Oracle 12c
-    - **Turkiye Finans Bank**: Developed corporate customer solutions using WinForms, WCF
+    - **Halkbank**: Upgraded Mobile Domain from legacy .NET to **Clean Architecture** with .NET Core, implementing REST APIs and EF Core/MSSQL on Azure DevOps
+    - **Akbank**: Led Payment System campaign as Full-Stack Developer using TypeScript, Knockout.js, C#, Java Spring on Oracle 12c
+    - **Turkiye Finans Bank**: Developed corporate customer solutions with WinForms and WCF services
     
     Technologies: .NET Core, REST APIs, EF Core, MSSQL, TypeScript, Knockout.js, Java Spring, Oracle 12c, Azure DevOps
 
 - layout: left
   company: TUBITAK
   link: 
-  job_title: Java Developer
+  job_title: Senior Software Engineer (Backend, .NET)
   dates: January 2017 - September 2017
   location: Kocaeli
   description: |
-    - Used Java and APDU to write high-level security EAC SAC data to smartcard's passport chip
-    - Worked on secure government identification systems
+    - Developed high-security Java application writing EAC SAC data to smart card passport chips using APDU protocol
+    - Contributed to secure government identification systems with biometric authentication
     
     Technologies: Java, APDU, Smartcard Technology
 
 - layout: left
   company: VakıfBank
   link: 
-  job_title: .NET Developer
+  job_title: Senior Software Engineer (Backend, .NET)
   dates: August 2013 - February 2017
   location: Istanbul, Turkey
   description: |
-    - Transformed legacy systems to service-oriented architectures for CRM and Collections teams
-    - Implemented MVVM pattern with WPF and WCF services
-    - Worked with Oracle 11g database and PL/SQL
+    - Transformed legacy systems to **service-oriented architecture** for CRM and Collections teams, improving maintainability and scalability
+    - Implemented **MVVM pattern** with WPF and WCF services on Oracle 11g/PL SQL platform
     
     Technologies: .NET, MVVM, WPF, WCF, Oracle 11g, PL/SQL
 
 - layout: left
   company: VeriPark
   link: 
-  job_title: Part-Time .NET Developer
+  job_title: .NET Developer (Part-Time)
   dates: December 2012 - June 2013
   location: Izmir, Turkey
   description: |
-    - Developed add-on widgets using ASP.NET for Turkcell SharePoint environment
-    - Worked part-time while completing university studies
+    - Developed custom ASP.NET widgets for Turkcell SharePoint environment while completing Computer Engineering degree
     
     Technologies: ASP.NET, SharePoint

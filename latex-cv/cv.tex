@@ -1,0 +1,163 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+% Page layout
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% Font
+\usepackage[rm]{roboto}
+\usepackage[defaultsans]{lato}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Colors - Professional blue theme
+\definecolor{PrimaryColor}{HTML}{0E4C92}
+\definecolor{SecondaryColor}{HTML}{1A73E8}
+\definecolor{AccentColor}{HTML}{34A853}
+\definecolor{BodyColor}{HTML}{666666}
+\definecolor{EmphasisColor}{HTML}{2C2C2C}
+
+\colorlet{name}{PrimaryColor}
+\colorlet{tagline}{SecondaryColor}
+\colorlet{heading}{PrimaryColor}
+\colorlet{headingrule}{SecondaryColor}
+\colorlet{subheading}{SecondaryColor}
+\colorlet{accent}{AccentColor}
+\colorlet{emphasis}{EmphasisColor}
+\colorlet{body}{BodyColor}
+
+% Bullet point style
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+
+\name{Burak Kalafat}
+\tagline{Senior Software Engineer (Backend, .NET)}
+
+\personalinfo{%
+  \email{burakkalafat89@gmail.com}
+  \phone{905403506161}
+  \linkedin{bkalafat}
+  \github{bkalafat}
+  \location{Istanbul, Turkey}
+}
+
+\makecvheader
+\AtBeginEnvironment{itemize}{\small}
+
+\columnratio{0.6}
+\begin{paracol}{2}
+
+
+\cvsection{Career Profile}
+
+\textbf{Senior Software Engineer (Backend, .NET)} with 12+ years of experience specializing in large-scale legacy modernization, 
+clean architecture, and high-performance backend systems within the financial sector. Proven technical leader 
+adept at mentoring teams, conducting code reviews, and driving architectural decisions.
+
+\textbf{GitHub Copilot Enterprise champion} with specialized expertise in AI-assisted development, delivering 
+organization-wide training and achieving \textbf{6-8× acceleration} on a **60,000-line COBOL-to-microservices 
+migration** within 3 months. Expert in Spec-Driven Development (SDD) and prompt engineering for 
+enterprise-scale modernization.
+
+Demonstrated impact through \textbf{performance optimization} (5-6× concurrent user capacity increase), 
+\textbf{technical leadership} (code review ownership, team mentorship), and \textbf{architectural excellence} 
+(Clean Architecture, design patterns, asynchronous programming).
+
+
+\cvsection{Experience}
+
+\cvevent{Expert .NET Developer}{Innovance}{May 2024 - Present}{Istanbul (Remote)}
+\begin{itemize}
+  \item \textbf{Akbank}: Contributing to the modernization of merchant-payment systems, migrating core mainframe services to .NET and Java
+  \item Evolved from GitHub Copilot Enterprise user to Prompt Engineer, mastering Ask/Edit modes for hallucination-free, spec-driven development workflows
+  \item Accelerated legacy modernization projects 6–8× faster, reducing 7–8 month timelines to 3–4 weeks through advanced Copilot orchestration
+  \item Eliminated technical debt in high-complexity codebases using Spec-Driven Development (SDD), ensuring zero scope drift across end-to-end delivery cycles
+  \item \textbf{Turkiye Finans}: Developed internet \& mobile banking back-ends with MVC, WCF, and MSSQL
+\end{itemize}
+Technologies: C\#, .NET, Java, MVC, WCF, MSSQL, GitHub Copilot Enterprise, Prompt Engineering, Spec-Driven Development
+
+
+
+\cvevent{Senior .NET Developer}{InsightSoftware}{September 2022 - April 2024}{North Carolina (Remote)}
+\begin{itemize}
+  \item Contributed to the architecture, design, and implementation of backend-heavy features using C\#
+  \item Worked in an international, remote-first environment
+  \item Delivered scalable and maintainable solutions
+\end{itemize}
+Technologies: C\#, .NET Core, Backend Architecture
+
+
+
+\cvevent{Senior .NET Developer}{OBSS}{September 2017 - September 2022}{Istanbul}
+\begin{itemize}
+  \item \textbf{Halkbank}: Upgraded Mobile Domain from legacy .NET to Clean Architecture using .NET Core
+  \item Developed REST APIs, implemented EF Core with MSSQL on Azure DevOps
+  \item \textbf{Akbank}: Led Payment System campaign as a Full-Stack Developer
+  \item Used TypeScript, Knockout.js, C\#, and Java Spring on Oracle 12c
+  \item \textbf{Turkiye Finans Bank}: Developed corporate customer solutions using WinForms, WCF
+\end{itemize}
+Technologies: .NET Core, REST APIs, EF Core, MSSQL, TypeScript, Knockout.js, Java Spring, Oracle 12c, Azure DevOps
+
+
+
+\cvevent{Java Developer}{TUBITAK}{January 2017 - September 2017}{Kocaeli}
+\begin{itemize}
+  \item Used Java and APDU to write high-level security EAC SAC data to smartcard's passport chip
+  \item Worked on secure government identification systems
+\end{itemize}
+Technologies: Java, APDU, Smartcard Technology
+
+
+
+\cvevent{.NET Developer}{VakıfBank}{August 2013 - February 2017}{Istanbul, Turkey}
+\begin{itemize}
+  \item Transformed legacy systems to service-oriented architectures for CRM and Collections teams
+  \item Implemented MVVM pattern with WPF and WCF services
+  \item Worked with Oracle 11g database and PL/SQL
+\end{itemize}
+Technologies: .NET, MVVM, WPF, WCF, Oracle 11g, PL/SQL
+
+
+
+\cvevent{Part-Time .NET Developer}{VeriPark}{December 2012 - June 2013}{Izmir, Turkey}
+\begin{itemize}
+  \item Developed add-on widgets using ASP.NET for Turkcell SharePoint environment
+  \item Worked part-time while completing university studies
+\end{itemize}
+Technologies: ASP.NET, SharePoint
+
+
+
+\switchcolumn
+
+\cvsection{Skills}
+
+\cvskill{C\# and .NET Core Microservices}{0.98}
+\cvskill{GitHub Copilot Enterprise and AI-Assisted Development}{0.95}
+\cvskill{Clean Architecture and Design Patterns}{0.95}
+\cvskill{REST APIs and Asynchronous Programming}{0.95}
+\cvskill{EF Core and Database Design (MSSQL, Oracle)}{0.9}
+\cvskill{Azure DevOps and GitHub Actions CI/CD}{0.9}
+\cvskill{Unit Testing and E2E Testing (Playwright)}{0.85}
+\cvskill{TypeScript, JavaScript and Java Spring}{0.85}
+\cvskill{Technical Leadership and Code Review}{0.9}
+
+\cvsection{Education}
+
+\cvevent{Bachelor of Science in Computer Engineering}{Ege University}{September 2008 - June 2013}{Izmir, Turkey}
+
+\cvsection{Certifications}
+
+\cvevent{Introduction to GitHub Copilot}{Microsoft Learn}{2024}{}
+
+\cvevent{Build Microservices with .NET and Amazon Web Services}{Udemy}{2024}{}
+
+\cvevent{React Nanodegree Program}{Udacity}{2020}{}
+
+\cvsection{Languages}
+
+\cvskill{Turkish}{Native}
+\cvskill{English}{Professional}
+
+\end{paracol}
+\end{document}

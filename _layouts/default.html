@@ -9,12 +9,16 @@
 {% include head.html %}
 
 <body>
-  <button onclick="window.open('https://raw.githubusercontent.com/bkalafat/cv/main/downloads/Burak_Kalafat_CV.docx', '_blank')" class="docx-button d-print-none">
-    <i class="fas fa-file-word"></i> DOCX
+  <button onclick="window.open('https://raw.githubusercontent.com/bkalafat/cv/main/downloads/Burak_Kalafat_Professional_CV.pdf', '_blank')" class="pdf-button d-print-none" title="Download Professional CV">
+    <i class="fas fa-file-pdf"></i> Professional CV
   </button>
 
-  <button onclick="generatePDF()" class="pdf-button d-print-none" id="pdfButton">
-    <i class="fas fa-file-pdf"></i> PDF
+  <button onclick="window.open('https://raw.githubusercontent.com/bkalafat/cv/main/downloads/Burak_Kalafat_ATS_CV.pdf', '_blank')" class="pdf-button d-print-none" style="right: 155px;" title="Download ATS-Optimized CV">
+    <i class="fas fa-file-pdf"></i> ATS CV
+  </button>
+
+  <button onclick="window.open('https://raw.githubusercontent.com/bkalafat/cv/main/downloads/Burak_Kalafat_CV.docx', '_blank')" class="docx-button d-print-none" style="right: 280px;" title="Download DOCX">
+    <i class="fas fa-file-word"></i> DOCX
   </button>
 
   <div class="wrapper">

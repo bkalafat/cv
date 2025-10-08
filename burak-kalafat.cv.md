@@ -1,6 +1,6 @@
 # BURAK KALAFAT
 
-## Expert Software Engineer
+## Senior Software Engineer (Backend, .NET)
 
 ### +
 
