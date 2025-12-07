@@ -18,6 +18,10 @@ import yaml
 import os
 from datetime import datetime
 from io import BytesIO
+from pathlib import Path
+
+# Project root directory (parent of scripts folder)
+PROJECT_ROOT = Path(__file__).parent.parent
 
 # Enable UTF-8 support for Turkish characters
 defaultEncoding = 'utf-8'
@@ -31,11 +35,11 @@ WHITE = colors.white
 
 def load_yaml_data():
     """Load all YAML data files"""
-    with open('_data/data.yml', 'r', encoding='utf-8') as f:
+    with open(PROJECT_ROOT / '_data/data.yml', 'r', encoding='utf-8') as f:
         data = yaml.safe_load(f)
-    with open('_data/experience.yml', 'r', encoding='utf-8') as f:
+    with open(PROJECT_ROOT / '_data/experience.yml', 'r', encoding='utf-8') as f:
         experiences = yaml.safe_load(f)
-    with open('_data/education.yml', 'r', encoding='utf-8') as f:
+    with open(PROJECT_ROOT / '_data/education.yml', 'r', encoding='utf-8') as f:
         education = yaml.safe_load(f)
     
     return data, experiences, education
@@ -71,7 +75,7 @@ class ModernCVCanvas(canvas.Canvas):
         
         # Profile photo (circular with clipping)
         try:
-            photo_path = 'assets/images/profile.png'
+            photo_path = str(PROJECT_ROOT / 'assets/images/profile.png')
             if os.path.exists(photo_path):
                 from PIL import Image as PILImage
                 
@@ -259,7 +263,7 @@ def generate_modern_cv():
     
     print("🎨 Creating beautiful PDF with sidebar...")
     
-    filename = f"Burak_Kalafat_Professional_CV.pdf"
+    filename = str(PROJECT_ROOT / "downloads" / "Burak_Kalafat_Professional_CV.pdf")
     
     # Create custom canvas
     pdf_canvas = ModernCVCanvas(filename, pagesize=A4, data=data)

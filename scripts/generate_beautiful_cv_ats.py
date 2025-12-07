@@ -14,14 +14,18 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 import yaml
 import re
+from pathlib import Path
+
+# Project root directory (parent of scripts folder)
+PROJECT_ROOT = Path(__file__).parent.parent
 
 def load_yaml_data():
     """Load all YAML data files"""
-    with open('_data/data.yml', 'r', encoding='utf-8') as f:
+    with open(PROJECT_ROOT / '_data/data.yml', 'r', encoding='utf-8') as f:
         data = yaml.safe_load(f)
-    with open('_data/experience.yml', 'r', encoding='utf-8') as f:
+    with open(PROJECT_ROOT / '_data/experience.yml', 'r', encoding='utf-8') as f:
         experiences = yaml.safe_load(f)
-    with open('_data/education.yml', 'r', encoding='utf-8') as f:
+    with open(PROJECT_ROOT / '_data/education.yml', 'r', encoding='utf-8') as f:
         education = yaml.safe_load(f)
     
     return data, experiences, education
@@ -34,7 +38,7 @@ def generate_ats_cv():
     
     print("📄 Creating ATS-friendly PDF (single-column, plain text)...")
     
-    filename = "Burak_Kalafat_ATS_CV.pdf"
+    filename = str(PROJECT_ROOT / "downloads" / "Burak_Kalafat_ATS_CV.pdf")
     
     # Register font for Turkish characters
     try:
