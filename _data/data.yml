@@ -245,3 +245,21 @@ skills:
 
     - name: Microservices Architecture (Training)
       level: 70%
+
+oss:
+  title: Open Source Projects
+  intro: >
+    Personal projects demonstrating expertise in developer tooling, AI integration, and .NET development.
+  contributions:
+    - title: DiffPilot - MCP Server for Code Review
+      link: https://marketplace.visualstudio.com/items?itemName=BurakKalafat.diffpilot
+      tagline: VS Code Extension | .NET 9 | MCP Protocol
+      description: |
+        **Model Context Protocol (MCP) Server** for AI-powered PR code review and developer productivity.
+        Published on VS Code Marketplace and NuGet registry.
+        
+        - Developed 9 MCP tools: PR diff, code review, commit message generation, secret scanning, changelog generation
+        - **100% on-premise** - no cloud services, fully air-gapped environment compatible
+        - Works with **GitHub Copilot, Claude**, and other MCP-enabled AI assistants
+        - Enterprise-ready: GDPR compliant, supports Azure DevOps Server/TFS, banking & financial environments
+        - Built with **.NET 9**, auto-registers as MCP server in VS Code
