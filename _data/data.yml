@@ -1,11 +1,10 @@
 # Canonical CV content for the website and both PDF variants.
-# Evidence and editorial decisions: docs/RECRUITER_REVIEW.md and docs/CV_AUDIT.md.
 sidebar:
   position: left
   about: false
   education: false
   name: Burak Kalafat
-  tagline: Senior Backend Engineer | .NET & Technical Leadership
+  tagline: Senior Backend Engineer | .NET | Banking & Payments
   avatar: profile.png
   email: burakkalafat89@gmail.com
   phone: '+905403506161'
@@ -30,13 +29,22 @@ sidebar:
     - item: Travel and cultural exchange
 career-profile:
   title: Summary
-  summary: 'Senior backend engineer with nearly 14 years of software engineering experience across banking, financial
-    services, and enterprise applications. Specializes in C#/.NET backend services and legacy modernization, including
-    COBOL/mainframe and .NET Framework migrations. Provides architecture guidance, code-review ownership, and mentoring,
-    with international remote experience. Microsoft Certified: Azure AI Engineer Associate.'
+  summary: Hands-on software engineer with 14+ years in banking, payments and enterprise financial software. Modernises
+    COBOL/mainframe systems into .NET and Java backends, including EOD and batch workloads. Combines implementation,
+    architecture decisions and technical leadership with enterprise Copilot engineering and reusable AI-assisted
+    development workflows. International remote experience; targeting UK/EU relocation and EMEA remote opportunities,
+    including visa-sponsored roles.
 skills:
   title: Technical Skills
   categories:
+  - name: Banking and Modernisation
+    items:
+    - Payment systems
+    - COBOL/mainframe modernisation
+    - End-of-Day (EOD)
+    - Batch processing
+    - Job dependencies
+    - Workload orchestration
   - name: Backend Engineering
     items:
     - C#
@@ -50,17 +58,43 @@ skills:
   - name: Architecture and Design
     items:
     - Clean Architecture
-    - Legacy modernization
+    - Domain-Driven Design (DDD)
+    - Distributed systems
     - Service-oriented architecture
     - Repository
     - Unit of Work
     - Facade
     - Strategy
-  - name: Databases
+  - name: Data and Integration
     items:
-    - SQL Server (MSSQL)
     - Oracle
+    - SQL Server (MSSQL)
     - PL/SQL
+    - IBM MQ
+    - RabbitMQ
+  - name: Enterprise AI Engineering
+    items:
+    - GitHub Copilot Enterprise
+    - AI-assisted SDLC
+    - Agentic development
+    - Spec-Driven Development (SDD)
+    - Developer enablement
+    - Architecture enablement
+  - name: Delivery and Platforms
+    items:
+    - Azure DevOps
+    - GitHub Actions
+    - CI/CD
+    - Docker
+    - Kubernetes
+  - name: Technical Leadership and Quality
+    items:
+    - Architecture guidance
+    - Code reviews
+    - Mentoring
+    - Coding standards
+    - Unit testing
+    - Playwright E2E testing
   - name: Languages and Frameworks
     items:
     - Java
@@ -70,30 +104,10 @@ skills:
     - WPF
     - WinForms
     - Knockout.js
-  - name: DevOps
-    items:
-    - Azure DevOps
-    - GitHub Actions
-    - CI/CD
-  - name: AI-Assisted Development
-    items:
-    - GitHub Copilot Enterprise
-    - Prompt engineering
-    - Spec-Driven Development (SDD)
-  - name: Quality and Leadership
-    items:
-    - Unit testing
-    - Playwright E2E testing
-    - Code reviews
-    - Mentoring
-    - Architecture guidance
-    - Coding standards
   - name: Training
     items:
     - Microservices
-    - Distributed systems
     - .NET with AWS
-    - Containerization
     - React
 experiences:
   title: Professional Experience
@@ -103,35 +117,36 @@ experiences:
     company: Innovance
     location: Istanbul, Turkey (Remote)
     bullets:
-    - Led COBOL/mainframe modernization for Akbank, translating legacy banking functionality into C# and Java backend
-      services.
-    - Guided backend design and coding standards using Clean Architecture; mentored developers on maintainable implementation
-      patterns.
-    - Applied specification-driven workflows with GitHub Copilot Enterprise to align generated code with implementation
-      requirements.
-    - Built internet and mobile banking backends for Türkiye Finans with ASP.NET MVC, WCF, SQL Server, and unit
+    - Modernise Akbank payment and banking systems from COBOL/mainframe to C#/.NET and Java, analysing legacy business
+      rules and making backend architecture decisions.
+    - Work on mission-critical EOD and batch modernisation, analysing job dependencies and workload orchestration
+      for scheduled banking processes.
+    - Designed and developed an enterprise GitHub Copilot plugin for the Architecture organisation, packaging reusable
+      guidance, agent/sub-agent workflows and engineering standards.
+    - Built repository- and database-oriented Copilot workflows and reusable engineering knowledge to support AI-assisted
+      SDLC and spec-driven development across teams.
+    - Built internet and mobile banking backends for Türkiye Finans using ASP.NET MVC, WCF, SQL Server and unit
       tests.
   - role: Senior Software Engineer (Backend, .NET)
     time: September 2022 – April 2024
     company: insightsoftware
     location: North Carolina, USA (Remote)
     bullets:
-    - Contributed to backend architecture and technical design for .NET Core features.
-    - Developed C# backend features for enterprise financial software.
-    - Collaborated with an international remote team on backend design and delivery.
+    - Developed C#/.NET Core backend features for enterprise financial software, contributing to architecture and
+      technical design.
+    - Collaborated with an international remote engineering team on backend design and delivery.
   - role: Senior Software Engineer (Backend, .NET)
     time: September 2017 – September 2022
     company: OBSS
     location: Istanbul, Turkey
     bullets:
-    - Led Halkbank’s mobile banking backend migration from .NET Framework to .NET Core and Clean Architecture.
-    - Applied asynchronous programming and thread optimization to the mobile banking backend’s request handling.
-    - Built REST APIs with EF Core and SQL Server; used Repository/Unit of Work patterns and Azure DevOps CI/CD
-      pipelines.
-    - Owned code reviews and mentored Türkiye Finans developers; established coding standards for WinForms and WCF
-      customer applications.
-    - Led full-stack payment campaign development for Akbank using C#, Java/Spring, TypeScript, Knockout.js, and
-      Oracle 12c.
+    - Led Halkbank mobile banking backend migration from .NET Framework to .NET Core and Clean Architecture.
+    - Applied asynchronous programming and thread optimisation to banking request handling; built REST APIs with
+      EF Core and SQL Server.
+    - Used Repository/Unit of Work patterns and Azure DevOps CI/CD pipelines for backend delivery.
+    - Owned code reviews and mentored Türkiye Finans developers, establishing coding standards for WinForms and
+      WCF applications.
+    - Led Akbank payment campaign development with C#, Java/Spring, TypeScript, Knockout.js and Oracle 12c.
   - role: Java Developer
     time: January 2017 – September 2017
     company: TÜBİTAK
@@ -144,8 +159,8 @@ experiences:
     company: VakıfBank
     location: Istanbul, Turkey
     bullets:
-    - Modernized VakıfBank CRM and collections applications toward service-oriented architecture with WPF/MVVM,
-      WCF, Oracle 11g, and PL/SQL.
+    - Modernised VakıfBank CRM and collections applications towards service-oriented architecture with WPF/MVVM,
+      WCF, Oracle 11g and PL/SQL.
   - role: Part-Time .NET Developer
     time: December 2012 – June 2013
     company: VeriPark

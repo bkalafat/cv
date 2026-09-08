@@ -84,7 +84,8 @@ def generate_professional(data, filename):
             meta.append("Expires " + credential["expires"])
         if credential.get("credentialname"):
             meta.append(credential["credentialname"])
-        story.append(Paragraph(f'<b>{label}</b><br/>{escape(" | ".join(meta))}', styles["small"]))
+        separator = "<br/>" if credential.get("credentialurl") else " · "
+        story.append(Paragraph(f'<b>{label}</b>{separator}{escape(" | ".join(meta))}', styles["small"]))
     for key, value in (
         ("languages", "; ".join(f'{item["idiom"]}: {item["level"]}' for item in profile["languages"]["info"])),
         ("interests", "; ".join(item["item"] for item in profile["interests"]["info"])),

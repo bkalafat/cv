@@ -1,7 +1,19 @@
 # Professional PDF design
 
 The recruiter PDF uses a separate editorial renderer in `scripts/cv_professional.py`.
-The ATS renderer and canonical career facts are unchanged.
+The ATS renderer retains its plain, single-column structure.
+
+The subsequent banking and enterprise AI rewrite uses the owner's latest career
+context: 14+ years, Akbank payment/EOD/batch modernisation, enterprise Copilot plugin
+development for the Architecture organisation, messaging, containers and DDD.
+The website, professional PDF, ATS PDF and plain-text companion share this content.
+Official employment titles and dates remain intact. New technology skills are
+listed without inventing project-specific deployments, scale or measured gains.
+The two-page English resume targets international remote and relocation opportunities.
+
+[Prospects' UK CV guidance](https://www.prospects.ac.uk/careers-advice/cvs-and-cover-letters/how-to-write-a-cv/)
+and the [National Careers Service](https://nationalcareers.service.gov.uk/careers-advice/cv-sections)
+informed the concise profile, relevant skills, clear chronology and two-page length.
 
 Design decisions:
 
