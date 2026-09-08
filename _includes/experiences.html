@@ -9,6 +9,9 @@
         <p class="time">{{ experience.time | escape }}</p>
       </div>
       <p class="company">{{ experience.company | escape }} · {{ experience.location | escape }}</p>
+      {% if experience.previous_role %}
+      <p class="company">Previously: {{ experience.previous_role | escape }} · {{ experience.previous_time | escape }}</p>
+      {% endif %}
     </div>
     <ul class="experience-bullets">
       {% for bullet in experience.bullets %}<li>{{ bullet | escape }}</li>{% endfor %}

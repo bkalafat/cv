@@ -83,6 +83,8 @@ def build_story(data, styles, variant):
             paragraph(f'{job["role"]} | {job["company"]}', "job"),
             paragraph(f'{job["time"]} | {job["location"]}', "meta"),
         ]
+        if job.get("previous_role"):
+            block.append(paragraph(f'Previously: {job["previous_role"]} | {job["previous_time"]}', "meta"))
         block.extend(paragraph(f"- {bullet}", "bullet") for bullet in job["bullets"])
         block.append(Spacer(1, 3))
         # Keep ordinary roles together; ReportLab can split an over-page block safely.

@@ -4,7 +4,7 @@ sidebar:
   about: false
   education: false
   name: Burak Kalafat
-  tagline: Senior Backend Engineer | .NET | Banking & Payments
+  tagline: Software Architect | .NET Backend Engineering
   avatar: profile.png
   email: burakkalafat89@gmail.com
   phone: '+905403506161'
@@ -29,11 +29,9 @@ sidebar:
     - item: Travel and cultural exchange
 career-profile:
   title: Summary
-  summary: Hands-on software engineer with 14+ years across banking, payments, enterprise financial software and
+  summary: Hands-on software architect with 14+ years across banking, payments, enterprise financial software and
     government identity systems. Builds .NET/Java backends for digital banking, CRM and collections; modernises
-    COBOL/mainframe and EOD/batch workloads. Combines architecture decisions and technical leadership with enterprise
-    Copilot engineering. International remote experience; targeting UK/EU relocation and EMEA remote opportunities,
-    including visa-sponsored roles.
+    COBOL/mainframe systems and EOD/batch workloads.
 skills:
   title: Technical Skills
   categories:
@@ -112,8 +110,8 @@ skills:
 experiences:
   title: Professional Experience
   info:
-  - role: Senior Software Engineer (Backend, .NET)
-    time: May 2024 – Present
+  - role: Software Architect
+    time: January 2026 – Present
     company: Innovance
     location: Istanbul, Turkey (Remote)
     bullets:
@@ -127,6 +125,8 @@ experiences:
       SDLC and spec-driven development across teams.
     - Developed internet and mobile banking services for Türkiye Finans, implementing ASP.NET MVC/WCF backends with
       SQL Server and unit tests.
+    previous_role: Senior Software Engineer (Backend, .NET)
+    previous_time: May 2024 – December 2025
   - role: Senior Software Engineer (Backend, .NET)
     time: September 2022 – April 2024
     company: insightsoftware

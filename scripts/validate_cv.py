@@ -32,6 +32,9 @@ def expected_content(data):
         for key in ("role", "company", "time", "location"):
             yield job[key]
         yield from job["bullets"]
+        if job.get("previous_role"):
+            yield job["previous_role"]
+            yield job["previous_time"]
     for degree in data["education"]["info"]:
         yield from (degree[key] for key in ("degree", "university", "location", "time"))
     for credential in data["certifications"]["list"]:

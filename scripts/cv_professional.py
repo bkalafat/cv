@@ -54,6 +54,8 @@ def generate_professional(data, filename):
         if index == 3:
             story += [PageBreak(), p("Professional Experience · Continued", "section")]
         block = [p(f'{job["role"]} | {job["company"]}', "job"), p(f'{job["time"]} | {job["location"]}', "meta")]
+        if job.get("previous_role"):
+            block.append(p(f'Previously: {job["previous_role"]} | {job["previous_time"]}', "meta"))
         block += [p(f"• {bullet}", "bullet") for bullet in job["bullets"]]
         block.append(Spacer(1, 4))
         story.append(KeepTogether(block))

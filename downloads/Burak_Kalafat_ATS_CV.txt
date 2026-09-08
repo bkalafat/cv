@@ -1,5 +1,5 @@
 Burak Kalafat
-Senior Backend Engineer | .NET | Banking & Payments
+Software Architect | .NET Backend Engineering
 Istanbul, Turkey
 Europe/Istanbul
 burakkalafat89@gmail.com
@@ -9,7 +9,7 @@ https://github.com/bkalafat
 https://cv.bkalafat.com
 
 SUMMARY
-Hands-on software engineer with 14+ years across banking, payments, enterprise financial software and government identity systems. Builds .NET/Java backends for digital banking, CRM and collections; modernises COBOL/mainframe and EOD/batch workloads. Combines architecture decisions and technical leadership with enterprise Copilot engineering. International remote experience; targeting UK/EU relocation and EMEA remote opportunities, including visa-sponsored roles.
+Hands-on software architect with 14+ years across banking, payments, enterprise financial software and government identity systems. Builds .NET/Java backends for digital banking, CRM and collections; modernises COBOL/mainframe systems and EOD/batch workloads.
 
 TECHNICAL SKILLS
 Banking and Modernisation: Payment systems, COBOL/mainframe modernisation, End-of-Day (EOD), Batch processing, Job dependencies, Workload orchestration
@@ -23,9 +23,10 @@ Languages and Frameworks: Java, Spring, TypeScript, JavaScript, WPF, WinForms, K
 Training: Microservices, .NET with AWS, React
 
 PROFESSIONAL EXPERIENCE
-Senior Software Engineer (Backend, .NET) | Innovance
-May 2024 – Present
+Software Architect | Innovance
+January 2026 – Present
 Istanbul, Turkey (Remote)
+Previously: Senior Software Engineer (Backend, .NET) | May 2024 – December 2025
 - Modernise Akbank payment and banking systems from COBOL/mainframe to C#/.NET and Java, analysing legacy business rules and making backend architecture decisions.
 - Work on mission-critical EOD and batch modernisation, analysing job dependencies and workload orchestration for scheduled banking processes.
 - Designed and developed an enterprise GitHub Copilot plugin for the Architecture organisation, packaging reusable guidance, agent/sub-agent workflows and engineering standards.

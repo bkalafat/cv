@@ -13,6 +13,8 @@ def generate_ats_text():
     lines.extend(["", "PROFESSIONAL EXPERIENCE"])
     for job in data["experiences"]["info"]:
         lines.extend([f'{job["role"]} | {job["company"]}', job["time"], job["location"]])
+        if job.get("previous_role"):
+            lines.append(f'Previously: {job["previous_role"]} | {job["previous_time"]}')
         lines.extend(f"- {bullet}" for bullet in job["bullets"])
         lines.append("")
     lines.append("EDUCATION")
