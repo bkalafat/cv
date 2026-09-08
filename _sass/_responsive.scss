@@ -11,6 +11,7 @@
     .container-block { padding: 8px 24px 18px; }
     .contact-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 20px; margin: 0; }
     .contact-list li { margin: 0; }
+    .contact-list li:first-child, .contact-list li:nth-child(n+5) { grid-column: 1 / -1; }
     .name { font-size: 30px; }
   }
   .main-wrapper { padding: 28px 22px 10px; }

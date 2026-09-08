@@ -22,6 +22,10 @@
     .item { margin-bottom: 12pt; }
   }
   .skill-categories dt, .skill-categories dd { font-size: 9pt; }
+  .skill-categories .skill-category { margin-bottom: 4pt; }
+  .skill-categories dt, .skill-categories dd { display: inline; }
+  .skill-categories dt::after { content: ": "; }
+  .experiences-section .item { break-inside: avoid; }
   h1, h2, h3, .meta { break-after: avoid; }
   li, .skill-category, .certifications-section .item, .educations-section .item { break-inside: avoid; }
   p { orphans: 3; widows: 3; }

@@ -21,6 +21,9 @@ Audit date: September 8, 2026. The initial audit was delivered before repository
 
 ## Owner corrections applied
 
+- Use nearly 14 years of experience, including the part-time role beginning December 2012.
+- The final recruiter pass uses concise experience bullets, full profile URLs in ATS output, standard headings, and no duplicated per-role technology lists. See RECRUITER_REVIEW.md for the complete evidence review.
+
 - Remove DiffPilot from the CV, including its product and compliance claims.
 - Remove delivery/performance metrics and promotional Copilot adoption claims. Keep factual modernization, architecture, engineering tools, and technical responsibilities.
 - VakıfBank ended January 15, 2017; TÜBİTAK began around January 15, 2017. Published chronology uses January 2017 for both sides of this transition.
@@ -29,7 +32,7 @@ Audit date: September 8, 2026. The initial audit was delivered before repository
 
 ## Implemented strategy
 
-All published factual content now lives in _data/data.yml. The duplicate experience, education, and training files were removed after consolidation. The website and both PDFs use the same summary, skills, employment bullets and technologies, education, credentials, languages, and interests. The exact website URL is shared with the site configuration and checked by validation.
+All published factual content now lives in _data/data.yml. The duplicate experience, education, and training files were removed after consolidation. The website and both PDFs use the same summary, skills, employment bullets with relevant technologies, education, credentials, languages, and interests. The exact website URL is shared with the site configuration and checked by validation.
 
 The headline targets senior backend/.NET work and technical leadership. Historical job titles remain factual rather than being upgraded to Staff or Principal. Recent banking architecture and modernization lead the narrative; early Java, .NET, and part-time roles preserve career progression. Skills use searchable categories, with AWS/microservices/containerization/React training separated from production expertise. No new cloud-operating experience is inferred from the AI-102 credential.
 

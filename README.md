@@ -1,17 +1,18 @@
 # Burak Kalafat - CV
 
-A Jekyll CV website with two selectable-text PDFs, hosted at [cv.bkalafat.com](https://cv.bkalafat.com).
+A Jekyll CV website with two selectable-text PDFs and an ATS plain-text companion, hosted at [cv.bkalafat.com](https://cv.bkalafat.com).
 
 - [Professional CV](https://cv.bkalafat.com/downloads/Burak_Kalafat_Professional_CV.pdf)
 - [ATS CV](https://cv.bkalafat.com/downloads/Burak_Kalafat_ATS_CV.pdf)
+- [ATS plain text](https://cv.bkalafat.com/downloads/Burak_Kalafat_ATS_CV.txt)
 
 ## Content and source of truth
 
 Edit **`_data/data.yml`** for all published CV content: profile, contacts, categorized skills, employment, education, credentials, languages, and interests. The website and both PDF generators read this same file. Do not add resume text to Python scripts or HTML templates.
 
-The former `_data/experience.yml`, `education.yml`, and `projects.yml` duplicates have been consolidated and removed. Education month/year dates and course completion dates were retained. Historical originals remain in Git history. See [the audit](docs/CV_AUDIT.md) for editorial decisions, confirmed corrections, and outstanding facts.
+The former `_data/experience.yml`, `education.yml`, and `projects.yml` duplicates have been consolidated and removed. Education month/year dates and course completion dates were retained. Historical originals remain in Git history. See [the audit](docs/CV_AUDIT.md) and [recruiter review](docs/RECRUITER_REVIEW.md) for editorial decisions, every bullet’s evidence gaps, ten key changes, and five before/after examples.
 
-- Employment uses month/year dates. Preserve verified role titles and distinguish employers from banking clients.
+- Employment uses Month YYYY – Month YYYY dates (or Present for the current role). Preserve verified role titles and distinguish employers from banking clients.
 - Quote telephone numbers, including their leading `+`.
 - Use plain UTF-8 text. The renderers escape HTML/XML characters such as `&` and `<`.
 - Distinguish training from certifications and production experience.
@@ -51,7 +52,7 @@ git diff --check
 
 Validation rejects duplicate YAML keys, malformed links, missing CV text, broken Unicode, wrong extraction order, text outside PDF pages, stale exclusions, missing local assets, and inconsistent downloadable PDFs. The current CV is limited to two pages per PDF; pagination regression tests exercise much longer content separately. Visually review both PDFs after content/layout changes; automated checks do not establish compatibility with every ATS.
 
-The generators work from any current directory and write to `downloads/`. Both use a shared ReportLab renderer with bundled DejaVu fonts; the professional version adds navy accents, while the ATS version uses a plain single-column layout. Both include every published content section. Font licensing is in `assets/fonts/LICENSE`.
+The ATS entry point also writes a UTF-8 text version with full profile URLs and standard headings. The generators work from any current directory and write to `downloads/`. Both use a shared ReportLab renderer with bundled DejaVu fonts; the professional version adds navy accents, while the ATS version uses a plain single-column layout. Both include every published content section. Per-employer technology lists are omitted to avoid repetition; relevant tools remain in bullets and categorized skills. Font licensing is in `assets/fonts/LICENSE`.
 
 ## Build and deployment
 
