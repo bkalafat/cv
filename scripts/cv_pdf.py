@@ -1,4 +1,4 @@
-"""Shared text-first ReportLab renderer, with professional and ATS styles.
+"""PDF entry point and plain ATS renderer; professional design is independent.
 
 All CV content is read from _data/data.yml. Platypus measures and paginates
 flowables; no section, bullet, contact field, or credential is truncated.
@@ -126,6 +126,11 @@ def generate_cv(variant="professional", *, data=None, output_path=None):
     register_fonts()
     filename = Path(output_path or PROJECT_ROOT / "downloads" / PDF_NAMES[variant])
     filename.parent.mkdir(parents=True, exist_ok=True)
+    if variant == "professional":
+        from cv_professional import generate_professional
+        generate_professional(data, filename)
+        print(f"Generated {variant} CV: {filename}")
+        return filename
     doc = SimpleDocTemplate(
         str(filename), pagesize=A4, rightMargin=17 * mm, leftMargin=17 * mm,
         topMargin=16 * mm, bottomMargin=16 * mm, pageCompression=1,
