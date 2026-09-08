@@ -5,8 +5,8 @@
     <li><span class="contact-label">Phone</span><a href="tel:{{ sidebar.phone | escape }}">{{ sidebar.phone | escape }}</a></li>
     <li><span class="contact-label">Location</span>{{ sidebar.location | escape }}</li>
     <li><span class="contact-label">Time zone</span>{{ sidebar.timezone | escape }}</li>
-    <li><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/{{ sidebar.linkedin | escape }}/">linkedin.com/in/{{ sidebar.linkedin | escape }}</a></li>
-    <li><span class="contact-label">GitHub</span><a href="https://github.com/{{ sidebar.github | escape }}">github.com/{{ sidebar.github | escape }}</a></li>
-    <li><span class="contact-label">Website</span><a href="{{ sidebar.website | escape }}">{{ sidebar.website | remove: 'https://' | escape }}</a></li>
+    <li><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/{{ sidebar.linkedin | escape }}/">https://www.linkedin.com/in/{{ sidebar.linkedin | escape }}/</a></li>
+    <li><span class="contact-label">GitHub</span><a href="https://github.com/{{ sidebar.github | escape }}">https://github.com/{{ sidebar.github | escape }}</a></li>
+    <li><span class="contact-label">Website</span><a href="{{ sidebar.website | escape }}">{{ sidebar.website | escape }}</a></li>
   </ul>
 </div>

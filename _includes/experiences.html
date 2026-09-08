@@ -13,7 +13,6 @@
     <ul class="experience-bullets">
       {% for bullet in experience.bullets %}<li>{{ bullet | escape }}</li>{% endfor %}
     </ul>
-    <p class="technologies"><strong>Technologies:</strong> {{ experience.technologies | join: ', ' | escape }}</p>
   </article>
   {% endfor %}
 </section>

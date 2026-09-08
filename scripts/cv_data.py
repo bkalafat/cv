@@ -49,7 +49,7 @@ def profile_links(data):
     return [
         (profile["email"], f'mailto:{profile["email"]}'),
         (profile["phone"], f'tel:{profile["phone"]}'),
-        (f'linkedin.com/in/{profile["linkedin"]}', f'https://www.linkedin.com/in/{profile["linkedin"]}/'),
-        (f'github.com/{profile["github"]}', f'https://github.com/{profile["github"]}'),
-        (profile["website"].removeprefix("https://"), profile["website"]),
+        (f'https://www.linkedin.com/in/{profile["linkedin"]}/', f'https://www.linkedin.com/in/{profile["linkedin"]}/'),
+        (f'https://github.com/{profile["github"]}', f'https://github.com/{profile["github"]}'),
+        (profile["website"], profile["website"]),
     ]

@@ -54,7 +54,7 @@ def make_styles(variant):
     }
 
 
-def build_story(data, styles):
+def build_story(data, styles, variant):
     story = []
     profile = data["sidebar"]
 
@@ -62,7 +62,8 @@ def build_story(data, styles):
         return Paragraph(escape(str(text)), styles[style])
 
     def section(key):
-        story.append(paragraph(data[key]["title"], "section"))
+        heading = data[key]["title"]
+        story.append(paragraph(heading.upper() if variant == "ats" else heading, "section"))
 
     story.extend([paragraph(profile["name"], "name"), paragraph(profile["tagline"], "headline")])
     links = profile_links(data)
@@ -83,7 +84,6 @@ def build_story(data, styles):
             paragraph(f'{job["time"]} | {job["location"]}', "meta"),
         ]
         block.extend(paragraph(f"- {bullet}", "bullet") for bullet in job["bullets"])
-        block.append(paragraph("Technologies: " + ", ".join(job["technologies"]), "small"))
         block.append(Spacer(1, 3))
         # Keep ordinary roles together; ReportLab can split an over-page block safely.
         story.append(KeepTogether(block))
@@ -99,7 +99,7 @@ def build_story(data, styles):
     for credential in data["certifications"]["list"]:
         label = f'<b>{escape(credential["name"])}</b>'
         if credential.get("credentialurl"):
-            label = link(credential["name"], credential["credentialurl"])
+            label = "<b>" + link(credential["name"], credential["credentialurl"]) + "</b>"
         metadata = [credential["organization"], credential["kind"]]
         if credential.get("start"):
             metadata.append(str(credential["start"]))
@@ -107,13 +107,14 @@ def build_story(data, styles):
             metadata.append("Expires " + credential["expires"])
         if credential.get("credentialname"):
             metadata.append(credential["credentialname"])
-        story.append(Paragraph(label + " | " + escape(" | ".join(metadata)), styles["small"]))
+        story.append(Paragraph(label + "<br/>" + escape(" | ".join(metadata)), styles["small"]))
 
     for key, text in (
         ("languages", "; ".join(f'{item["idiom"]}: {item["level"]}' for item in profile["languages"]["info"])),
         ("interests", "; ".join(item["item"] for item in profile["interests"]["info"])),
     ):
-        story.append(paragraph(profile[key]["title"], "section"))
+        heading = profile[key]["title"]
+        story.append(paragraph(heading.upper() if variant == "ats" else heading, "section"))
         story.append(paragraph(text, "small"))
     return story
 
@@ -133,6 +134,8 @@ def generate_cv(variant="professional", *, data=None, output_path=None):
     )
 
     def page_furniture(canvas, document):
+        if variant == "ats":
+            return
         canvas.saveState()
         width, height = A4
         if variant == "professional":
@@ -147,6 +150,6 @@ def generate_cv(variant="professional", *, data=None, output_path=None):
         canvas.drawRightString(width - 17 * mm, 8 * mm, f"Page {document.page}")
         canvas.restoreState()
 
-    doc.build(build_story(data, make_styles(variant)), onFirstPage=page_furniture, onLaterPages=page_furniture)
+    doc.build(build_story(data, make_styles(variant), variant), onFirstPage=page_furniture, onLaterPages=page_furniture)
     print(f"Generated {variant} CV: {filename}")
     return filename

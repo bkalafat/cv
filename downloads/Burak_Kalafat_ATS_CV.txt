@@ -1,0 +1,98 @@
+Burak Kalafat
+Senior Backend Engineer | .NET & Technical Leadership
+Istanbul, Turkey
+Europe/Istanbul
+burakkalafat89@gmail.com
++905403506161
+https://www.linkedin.com/in/bkalafat/
+https://github.com/bkalafat
+https://cv.bkalafat.com
+
+SUMMARY
+Senior backend engineer with nearly 14 years of software engineering experience across banking, financial services, and enterprise applications. Specializes in C#/.NET backend services and legacy modernization, including COBOL/mainframe and .NET Framework migrations. Provides architecture guidance, code-review ownership, and mentoring, with international remote experience. Microsoft Certified: Azure AI Engineer Associate.
+
+TECHNICAL SKILLS
+Backend Engineering: C#, .NET, .NET Core, ASP.NET MVC, REST APIs, EF Core, Asynchronous programming, WCF
+Architecture and Design: Clean Architecture, Legacy modernization, Service-oriented architecture, Repository, Unit of Work, Facade, Strategy
+Databases: SQL Server (MSSQL), Oracle, PL/SQL
+Languages and Frameworks: Java, Spring, TypeScript, JavaScript, WPF, WinForms, Knockout.js
+DevOps: Azure DevOps, GitHub Actions, CI/CD
+AI-Assisted Development: GitHub Copilot Enterprise, Prompt engineering, Spec-Driven Development (SDD)
+Quality and Leadership: Unit testing, Playwright E2E testing, Code reviews, Mentoring, Architecture guidance, Coding standards
+Training: Microservices, Distributed systems, .NET with AWS, Containerization, React
+
+PROFESSIONAL EXPERIENCE
+Senior Software Engineer (Backend, .NET) | Innovance
+May 2024 – Present
+Istanbul, Turkey (Remote)
+- Led COBOL/mainframe modernization for Akbank, translating legacy banking functionality into C# and Java backend services.
+- Guided backend design and coding standards using Clean Architecture; mentored developers on maintainable implementation patterns.
+- Applied specification-driven workflows with GitHub Copilot Enterprise to align generated code with implementation requirements.
+- Built internet and mobile banking backends for Türkiye Finans with ASP.NET MVC, WCF, SQL Server, and unit tests.
+
+Senior Software Engineer (Backend, .NET) | insightsoftware
+September 2022 – April 2024
+North Carolina, USA (Remote)
+- Contributed to backend architecture and technical design for .NET Core features.
+- Developed C# backend features for enterprise financial software.
+- Collaborated with an international remote team on backend design and delivery.
+
+Senior Software Engineer (Backend, .NET) | OBSS
+September 2017 – September 2022
+Istanbul, Turkey
+- Led Halkbank’s mobile banking backend migration from .NET Framework to .NET Core and Clean Architecture.
+- Applied asynchronous programming and thread optimization to the mobile banking backend’s request handling.
+- Built REST APIs with EF Core and SQL Server; used Repository/Unit of Work patterns and Azure DevOps CI/CD pipelines.
+- Owned code reviews and mentored Türkiye Finans developers; established coding standards for WinForms and WCF customer applications.
+- Led full-stack payment campaign development for Akbank using C#, Java/Spring, TypeScript, Knockout.js, and Oracle 12c.
+
+Java Developer | TÜBİTAK
+January 2017 – September 2017
+Kocaeli, Turkey
+- Built Java software to write EAC/SAC security data to passport smartcard chips using APDU commands for government identification systems.
+
+.NET Developer | VakıfBank
+August 2013 – January 2017
+Istanbul, Turkey
+- Modernized VakıfBank CRM and collections applications toward service-oriented architecture with WPF/MVVM, WCF, Oracle 11g, and PL/SQL.
+
+Part-Time .NET Developer | VeriPark
+December 2012 – June 2013
+Izmir, Turkey
+- Built ASP.NET widgets for Turkcell’s SharePoint environment while completing the Computer Engineering degree.
+
+EDUCATION
+BSc in Computer Engineering
+Ege University, Izmir, Turkey
+September 2008 – June 2013
+
+CERTIFICATIONS
+Microsoft Certified: Azure AI Engineer Associate
+Microsoft | Certification
+March 6, 2026
+Expires March 6, 2027
+Certification overview (AI-102): https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/
+
+Introduction to GitHub Copilot
+Microsoft Learn | Training
+2024
+Course overview: https://learn.microsoft.com/en-us/training/modules/introduction-to-github-copilot/
+
+Build Microservices with .NET and Amazon Web Services
+Udemy | Training
+February 2024
+
+IELTS - Band 7
+British Council | Language test
+2023
+
+React Nanodegree Program
+Udacity | Training
+February 2020
+
+LANGUAGES
+Turkish: Native
+English: Professional proficiency; IELTS Band 7 (2023)
+
+INTERESTS
+Chess; LLM and RAG applications; AI-powered customer service; Travel and cultural exchange

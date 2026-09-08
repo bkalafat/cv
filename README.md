@@ -1,275 +1,85 @@
-# 🚀 Burak Kalafat - Professional CV Website
+# Burak Kalafat - CV
 
-[![Build Status](https://github.com/bkalafat/cv/workflows/Build%20and%20Deploy%20CV/badge.svg)](https://github.com/bkalafat/cv/actions)
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue)](https://bkalafat.github.io/cv)
+A Jekyll CV website with two selectable-text PDFs, hosted at [cv.bkalafat.com](https://cv.bkalafat.com).
 
-A modern, responsive CV website built with Jekyll and hosted on GitHub Pages. Features automatic PDF and DOCX generation via GitHub Actions.
+- [Professional CV](https://cv.bkalafat.com/downloads/Burak_Kalafat_Professional_CV.pdf)
+- [ATS CV](https://cv.bkalafat.com/downloads/Burak_Kalafat_ATS_CV.pdf)
 
-## 🌐 Live Site
+## Content and source of truth
 
-Visit the live CV at: **[https://bkalafat.github.io/cv](https://bkalafat.github.io/cv)** *(Update this URL after deployment)*
+Edit **`_data/data.yml`** for all published CV content: profile, contacts, categorized skills, employment, education, credentials, languages, and interests. The website and both PDF generators read this same file. Do not add resume text to Python scripts or HTML templates.
 
-## ✨ Features
+The former `_data/experience.yml`, `education.yml`, and `projects.yml` duplicates have been consolidated and removed. Education month/year dates and course completion dates were retained. Historical originals remain in Git history. See [the audit](docs/CV_AUDIT.md) for editorial decisions, confirmed corrections, and outstanding facts.
 
-- 🎨 **Modern Design**: Built with [modern-resume-theme](https://github.com/sproogen/modern-resume-theme)
-- 📱 **Responsive**: Works perfectly on mobile, tablet, and desktop
-- 🔄 **Auto-Generated Documents**: Automatic PDF and DOCX generation on every commit
-- 🚀 **Fast Deployment**: Hosted on GitHub Pages with automatic builds
-- ♿ **Accessible**: WCAG compliant and screen-reader friendly
-- 🔍 **SEO Optimized**: Meta tags and sitemap included
+- Employment uses month/year dates. Preserve verified role titles and distinguish employers from banking clients.
+- Quote telephone numbers, including their leading `+`.
+- Use plain UTF-8 text. The renderers escape HTML/XML characters such as `&` and `<`.
+- Distinguish training from certifications and production experience.
+- Credential `start` and `expires` fields are optional. A course/certification overview link is not a personal credential verification link.
+- DiffPilot, numerical improvement claims, and Copilot promotion were removed at the owner's request.
+- `docs/latex-cv/` contains archived, unsynchronized experiments. It is excluded from publishing and is not a current CV source.
 
-## 📥 Download Resume
+## Local development
 
-📄 **[Download Professional CV (PDF)](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_Professional_CV.pdf)** - Beautiful design with sidebar  
-🤖 **[Download ATS-Optimized CV (PDF)](https://github.com/bkalafat/cv/raw/main/downloads/Burak_Kalafat_ATS_CV.pdf)** - Plain format for ATS systems
+Requires Python 3.13, Ruby 3.3 or 3.4, and Bundler. CI uses Ruby 3.4.
+On Windows, use RubyInstaller **with Devkit** for gems with native extensions.
 
-## 🛠️ Technology Stack
-
-- **Static Site Generator**: Jekyll 4.3
-- **Theme**: Modern Resume Theme 2.0
-- **Hosting**: GitHub Pages
-- **CI/CD**: GitHub Actions
-- **Document Generation**: 
-  - wkhtmltopdf (HTML to PDF)
-  - Pandoc (Markdown to DOCX/PDF)
-
-## 📁 Project Structure
-
-```
-cv/
-├── .github/
-│   └── workflows/
-│       ├── build-resume.yml      # Main build & deploy workflow
-│       └── generate-docx.yml     # DOCX/PDF generation workflow
-├── _data/
-│   ├── experience.yml            # Work experience data
-│   ├── education.yml             # Education data
-│   └── projects.yml              # Certifications & projects
-├── assets/
-│   └── images/
-│       ├── profile.jpg           # Profile photo (add your own)
-│       └── favicon.svg           # Site favicon
-├── _config.yml                   # Jekyll & site configuration
-├── index.md                      # Main page
-├── Gemfile                       # Ruby dependencies
-├── .gitignore                    # Git ignore rules
-└── README.md                     # This file
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+bundle install
+python scripts/validate_cv.py
+python scripts/generate_beautiful_cv.py
+python scripts/generate_beautiful_cv_ats.py
+bundle exec jekyll serve
 ```
 
-## 🚀 Quick Start
+On macOS/Linux, activate with `source .venv/bin/activate`. Open `http://localhost:4000`.
+Keep `Gemfile.lock` under version control; it records Windows and Linux dependencies.
 
-### Prerequisites
+## Validation
 
-- Ruby 3.1 or higher
-- Bundler gem
-- Git
-
-### Local Development
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/bkalafat/cv.git
-   cd cv
-   ```
-
-2. **Install dependencies**
-   ```bash
-   bundle install
-   ```
-
-3. **Run local server**
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-4. **Open in browser**
-   ```
-   http://localhost:4000
-   ```
-
-## ✏️ How to Update Your CV
-
-### 1. Update Personal Information
-
-Edit `_config.yml`:
-```yaml
-name: Your Name
-title: Your Job Title
-email: your.email@example.com
-phone: "+90xxxxxxxxxx"
+```powershell
+python -m unittest discover -s tests -v
+python scripts/generate_beautiful_cv.py
+python scripts/generate_beautiful_cv_ats.py
+bundle exec jekyll build --trace
+python scripts/validate_cv.py --outputs
+git diff --check
 ```
 
-### 2. Update Work Experience
+Validation rejects duplicate YAML keys, malformed links, missing CV text, broken Unicode, wrong extraction order, text outside PDF pages, stale exclusions, missing local assets, and inconsistent downloadable PDFs. The current CV is limited to two pages per PDF; pagination regression tests exercise much longer content separately. Visually review both PDFs after content/layout changes; automated checks do not establish compatibility with every ATS.
 
-Edit `_data/experience.yml`:
-```yaml
-- layout: left
-  company: Company Name
-  job_title: Your Position
-  dates: Month Year - Present
-  location: City, Country
-  description: |
-    - Achievement 1
-    - Achievement 2
+The generators work from any current directory and write to `downloads/`. Both use a shared ReportLab renderer with bundled DejaVu fonts; the professional version adds navy accents, while the ATS version uses a plain single-column layout. Both include every published content section. Font licensing is in `assets/fonts/LICENSE`.
+
+## Build and deployment
+
+`.github/workflows/jekyll-gh-pages.yml` validates source data, tests pagination, regenerates both PDFs, builds Jekyll, verifies output parity, and uploads PDF and Pages artifacts. Pull requests run the build checks. Deployment runs only on the repository's default branch after a successful build.
+
+In GitHub repository Settings → Pages, choose **GitHub Actions** as the source.
+The canonical domain is configured in `_config.yml` and `CNAME`. Keep these and `sidebar.website` aligned.
+
+Generated PDFs are included in the deployed website. Download links use the site's base URL and refer to PDFs generated from the same revision. CI does not commit PDFs back to the branch; regenerate the tracked copies locally when changing content. No DOCX generation is configured.
+
+For a project subpath preview:
+```powershell
+bundle exec jekyll build --baseurl /cv --destination tmp/site-subpath
+python scripts/validate_cv.py --outputs --site-dir tmp/site-subpath --baseurl /cv
 ```
 
-### 3. Update Education
+## Structure
 
-Edit `_data/education.yml`:
-```yaml
-- layout: left
-  name: University Name
-  dates: Year - Year
-  qualification: Degree Name
-  description: Additional details
-```
+- `_data/data.yml`: canonical content
+- `index.md`, `_includes/`, `_layouts/`: Jekyll sections and page structure
+- `_sass/`: website, mobile, and print styles
+- `scripts/cv_data.py`: shared content loading
+- `scripts/cv_pdf.py`: shared PDF layout and pagination
+- `scripts/generate_beautiful_cv*.py`: stable PDF entry points
+- `scripts/validate_cv.py`, `tests/`: source/output validation and regression coverage
+- `downloads/`: generated PDFs
+- `docs/`: audit and excluded historical material
 
-### 4. Update Certifications/Projects
+## Attribution
 
-Edit `_data/projects.yml`:
-```yaml
-- layout: top-middle
-  name: Certification/Project Name
-  dates: Month Year
-  description: Details about the certification
-```
-
-### 5. Add Profile Photo
-
-Replace `assets/images/profile.jpg` with your photo (recommended: 400x400px, square)
-
-## 🚀 Deployment
-
-### Initial Setup
-
-1. **Create GitHub Repository**
-   ```bash
-   # Initialize git if not already done
-   git init
-   git add .
-   git commit -m "Initial commit: CV website"
-   
-   # Create repo on GitHub, then:
-   git remote add origin https://github.com/bkalafat/cv.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-2. **Enable GitHub Pages**
-   - Go to repository Settings → Pages
-   - Source: Deploy from a branch
-   - Branch: Select `gh-pages` (will be created automatically by workflow)
-   - Click Save
-
-3. **Update URLs in _config.yml**
-   ```yaml
-   baseurl: "/cv"  # your repo name
-   url: "https://bkalafat.github.io"  # your GitHub Pages URL
-   ```
-
-### Automatic Deployment
-
-Every push to `main` branch will:
-1. ✅ Build Jekyll site
-2. ✅ Deploy to GitHub Pages
-3. ✅ Generate PDF from HTML
-4. ✅ Generate DOCX and PDF from Markdown
-
-### Manual Deployment
-
-Trigger workflows manually:
-- Go to Actions tab
-- Select workflow
-- Click "Run workflow"
-
-## 📦 Download Generated Documents
-
-After each build:
-1. Go to **Actions** tab
-2. Click on latest workflow run
-3. Download artifacts:
-   - `cv-pdf`: PDF from HTML
-   - `cv-docx`: DOCX and PDF from Markdown
-
-## 🎨 Customization
-
-### Change Theme Colors
-
-Create `_sass/custom.scss` and override theme variables.
-
-### Add Custom Sections
-
-Create new YAML files in `_data/` folder and reference them in `index.md`.
-
-### Modify Layout
-
-The theme uses remote theme. To customize layouts, override them locally by creating files in `_layouts/` folder.
-
-## 🧪 Testing
-
-### Local Testing
-```bash
-# Build site
-bundle exec jekyll build
-
-# Serve locally
-bundle exec jekyll serve --livereload
-```
-
-### Validate HTML
-```bash
-bundle exec htmlproofer ./_site --disable-external
-```
-
-## 📝 Print to PDF (Manual)
-
-From the website:
-1. Open CV in browser
-2. Press `Ctrl+P` (or `Cmd+P` on Mac)
-3. Select "Save as PDF"
-4. Adjust margins if needed
-5. Save
-
-## 🔧 Troubleshooting
-
-### Build Fails
-- Check Jekyll version compatibility
-- Verify all YAML files are valid
-- Ensure remote theme is accessible
-
-### GitHub Pages Not Updating
-- Wait 2-3 minutes after push
-- Check Actions tab for build status
-- Verify GitHub Pages is enabled
-
-### PDF/DOCX Not Generated
-- Check Actions tab for errors
-- Verify workflows have correct permissions
-- Check artifact retention settings
-
-## 📄 License
-
-This project uses the [Modern Resume Theme](https://github.com/sproogen/modern-resume-theme) which is licensed under MIT.
-
-Your CV content is your own.
-
-## 🙏 Credits
-
-- **Theme**: [Modern Resume Theme](https://github.com/sproogen/modern-resume-theme) by James Grant
-- **Static Site Generator**: [Jekyll](https://jekyllrb.com/)
-- **Hosting**: [GitHub Pages](https://pages.github.com/)
-- **PDF Generation**: [wkhtmltopdf](https://wkhtmltopdf.org/)
-- **Document Conversion**: [Pandoc](https://pandoc.org/)
-
-## 📞 Contact
-
-**Burak Kalafat**
-- Email: burakkalafat89@gmail.com
-- GitHub: [@bkalafat](https://github.com/bkalafat)
-- LinkedIn: [bkalafat](https://www.linkedin.com/in/bkalafat/)
-
----
-
-⭐ If you found this helpful, please star the repository!
-
-**Last Updated**: October 2025
+The original design is Orbit by Xiaoying Riley / 3rd Wave Media, adapted through the online-cv Jekyll template. The original SCSS identifies the Creative Commons Attribution 3.0 license; visible attribution is retained in the footer. Vendored assets retain their own licenses.

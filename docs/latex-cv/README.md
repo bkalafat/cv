@@ -1,3 +1,5 @@
+> ARCHIVED: Historical experiment with superseded CV content and instructions. Not synchronized, built, or published. Use the root README and _data/data.yml for the current CV.
+
 # LaTeX CV Generator
 
 Bu proje, Jekyll web CV'nizden otomatik olarak profesyonel bir LaTeX CV oluşturur.

@@ -1,23 +1,12 @@
-# CV Downloads
+# CV downloads
 
-This folder contains CV files in different formats.
+- `Burak_Kalafat_Professional_CV.pdf`: two-page professional layout with navy accents.
+- `Burak_Kalafat_ATS_CV.pdf`: two-page, plain single-column layout.
 
-## 📄 Available Files
+Both contain the same CV content from `_data/data.yml`, with selectable Unicode text and clickable contact links.
 
-- **Burak_Kalafat_Professional_CV.pdf** - Professional CV with beautiful design and sidebar
-- **Burak_Kalafat_ATS_CV.pdf** - ATS-optimized CV with plain format for applicant tracking systems
+Regenerate using the two entry points in `scripts/`. GitHub Actions regenerates the deployed PDFs on each build and provides a `cv-pdfs` artifact. It does not commit generated files back to the repository.
 
-## 📥 Direct Download Links
-
-- [Download Professional CV (PDF)](https://raw.githubusercontent.com/bkalafat/cv/main/downloads/Burak_Kalafat_Professional_CV.pdf)
-- [Download ATS CV (PDF)](https://raw.githubusercontent.com/bkalafat/cv/main/downloads/Burak_Kalafat_ATS_CV.pdf)
-
-## 🔄 Updates
-
-CV files are automatically regenerated whenever:
-- Changes are pushed to the `main` branch
-- The workflow is manually triggered
-
----
-
-**Last Generated:** Auto-updated by GitHub Actions
+Live downloads:
+- [Professional CV](https://cv.bkalafat.com/downloads/Burak_Kalafat_Professional_CV.pdf)
+- [ATS CV](https://cv.bkalafat.com/downloads/Burak_Kalafat_ATS_CV.pdf)

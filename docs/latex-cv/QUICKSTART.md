@@ -1,3 +1,5 @@
+> ARCHIVED: Historical experiment with superseded CV content and instructions. Not synchronized, built, or published. Use the root README and _data/data.yml for the current CV.
+
 # 🚀 HIZLI BAŞLANGIÇ - Jake's Resume (Fotoğraflı)
 
 ## ⚡ 3 Dakikada PDF Hazır!

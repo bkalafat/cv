@@ -1,3 +1,5 @@
+> ARCHIVED: Historical experiment with superseded CV content and instructions. Not synchronized, built, or published. Use the root README and _data/data.yml for the current CV.
+
 # 🎯 Şık CV - Jake's Resume Template (Fotoğraflı)
 
 Bu, **Google, Facebook, Amazon'da en çok kullanılan** CV template'i (6.2k+ GitHub stars)!
