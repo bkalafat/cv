@@ -4,7 +4,7 @@ sidebar:
   about: false
   education: false
   name: Burak Kalafat
-  tagline: Software Architect | .NET Backend Engineering
+  tagline: Software Architect | .NET & Java Backend Engineering
   avatar: profile.png
   email: burakkalafat89@gmail.com
   phone: '+905403506161'
@@ -95,7 +95,7 @@ skills:
     - Playwright E2E testing
   - name: Languages and Frameworks
     items:
-    - Java
+    - Java 21
     - Spring
     - TypeScript
     - JavaScript
@@ -115,8 +115,8 @@ experiences:
     company: Innovance
     location: Istanbul, Turkey (Remote)
     bullets:
-    - Modernise Akbank payment and banking systems from COBOL/mainframe to C#/.NET and Java, analysing legacy business
-      rules and making backend architecture decisions.
+    - Modernise Akbank COBOL/mainframe banking and payment systems into .NET and Java backends, with hands-on implementation
+      primarily in Java 21; analyse legacy business rules and shape backend architecture.
     - Work on mission-critical EOD and batch modernisation, analysing job dependencies and workload orchestration
       for scheduled banking processes.
     - Designed and developed an enterprise GitHub Copilot plugin for the Architecture organisation, packaging reusable

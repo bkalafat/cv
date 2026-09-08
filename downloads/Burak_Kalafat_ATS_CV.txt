@@ -1,5 +1,5 @@
 Burak Kalafat
-Software Architect | .NET Backend Engineering
+Software Architect | .NET & Java Backend Engineering
 Istanbul, Turkey
 Europe/Istanbul
 burakkalafat89@gmail.com
@@ -19,7 +19,7 @@ Data and Integration: Oracle, SQL Server (MSSQL), PL/SQL, IBM MQ, RabbitMQ
 Enterprise AI Engineering: GitHub Copilot Enterprise, AI-assisted SDLC, Agentic development, Spec-Driven Development (SDD), Developer enablement, Architecture enablement
 Delivery and Platforms: Azure DevOps, GitHub Actions, CI/CD, Docker, Kubernetes
 Technical Leadership and Quality: Architecture guidance, Code reviews, Mentoring, Coding standards, Unit testing, Playwright E2E testing
-Languages and Frameworks: Java, Spring, TypeScript, JavaScript, WPF, WinForms, Knockout.js
+Languages and Frameworks: Java 21, Spring, TypeScript, JavaScript, WPF, WinForms, Knockout.js
 Training: Microservices, .NET with AWS, React
 
 PROFESSIONAL EXPERIENCE
@@ -27,7 +27,7 @@ Software Architect | Innovance
 January 2026 – Present
 Istanbul, Turkey (Remote)
 Previously: Senior Software Engineer (Backend, .NET) | May 2024 – December 2025
-- Modernise Akbank payment and banking systems from COBOL/mainframe to C#/.NET and Java, analysing legacy business rules and making backend architecture decisions.
+- Modernise Akbank COBOL/mainframe banking and payment systems into .NET and Java backends, with hands-on implementation primarily in Java 21; analyse legacy business rules and shape backend architecture.
 - Work on mission-critical EOD and batch modernisation, analysing job dependencies and workload orchestration for scheduled banking processes.
 - Designed and developed an enterprise GitHub Copilot plugin for the Architecture organisation, packaging reusable guidance, agent/sub-agent workflows and engineering standards.
 - Built repository- and database-oriented Copilot workflows and reusable engineering knowledge to support AI-assisted SDLC and spec-driven development across teams.
