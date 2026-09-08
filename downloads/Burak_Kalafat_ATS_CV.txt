@@ -12,15 +12,15 @@ SUMMARY
 Hands-on software architect with 14+ years across banking, payments, enterprise financial software and government identity systems. Builds .NET/Java backends for digital banking, CRM and collections; modernises COBOL/mainframe systems and EOD/batch workloads.
 
 TECHNICAL SKILLS
-Banking and Modernisation: Payment systems, COBOL/mainframe modernisation, End-of-Day (EOD), Batch processing, Job dependencies, Workload orchestration
-Backend Engineering: C#, .NET, .NET Core, ASP.NET MVC, REST APIs, EF Core, Asynchronous programming, WCF
-Architecture and Design: Clean Architecture, Domain-Driven Design (DDD), Distributed systems, Service-oriented architecture, Repository, Unit of Work, Facade, Strategy
-Data and Integration: Oracle, SQL Server (MSSQL), PL/SQL, IBM MQ, RabbitMQ
-Enterprise AI Engineering: GitHub Copilot Enterprise, AI-assisted SDLC, Agentic development, Spec-Driven Development (SDD), Developer enablement, Architecture enablement
-Delivery and Platforms: Azure DevOps, GitHub Actions, CI/CD, Docker, Kubernetes
-Technical Leadership and Quality: Architecture guidance, Code reviews, Mentoring, Coding standards, Unit testing, Playwright E2E testing
-Languages and Frameworks: Java 21, Spring, TypeScript, JavaScript, WPF, WinForms, Knockout.js
-Training: Microservices, .NET with AWS, React
+Backend Development: C#, .NET, .NET Core, Java 21, Spring, ASP.NET MVC, REST APIs, EF Core, Asynchronous programming
+Architecture: Clean Architecture, Domain-Driven Design (DDD), Distributed systems, Service-oriented architecture, Repository, Unit of Work, Facade, Strategy
+Databases and Messaging: Oracle, SQL Server (MSSQL), PL/SQL, IBM MQ, RabbitMQ
+Banking and Batch Systems: Payment systems, COBOL/mainframe modernisation, End-of-Day (EOD), Batch processing, Job dependencies, Workload orchestration
+DevOps and Containers: Azure DevOps, GitHub Actions, CI/CD, Docker, Kubernetes
+AI-Assisted Engineering: GitHub Copilot Enterprise, AI-assisted SDLC, Agentic development, Spec-Driven Development (SDD), Developer enablement, Architecture enablement
+Quality and Leadership: Architecture guidance, Code reviews, Mentoring, Coding standards, Unit testing, Playwright E2E testing
+Web and Desktop: TypeScript, JavaScript, Knockout.js, WPF, WinForms, WCF
+Additional Training: Microservices, .NET with AWS, React
 
 PROFESSIONAL EXPERIENCE
 Software Architect | Innovance

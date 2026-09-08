@@ -35,25 +35,18 @@ career-profile:
 skills:
   title: Technical Skills
   categories:
-  - name: Banking and Modernisation
-    items:
-    - Payment systems
-    - COBOL/mainframe modernisation
-    - End-of-Day (EOD)
-    - Batch processing
-    - Job dependencies
-    - Workload orchestration
-  - name: Backend Engineering
+  - name: Backend Development
     items:
     - C#
     - .NET
     - .NET Core
+    - Java 21
+    - Spring
     - ASP.NET MVC
     - REST APIs
     - EF Core
     - Asynchronous programming
-    - WCF
-  - name: Architecture and Design
+  - name: Architecture
     items:
     - Clean Architecture
     - Domain-Driven Design (DDD)
@@ -63,14 +56,29 @@ skills:
     - Unit of Work
     - Facade
     - Strategy
-  - name: Data and Integration
+  - name: Databases and Messaging
     items:
     - Oracle
     - SQL Server (MSSQL)
     - PL/SQL
     - IBM MQ
     - RabbitMQ
-  - name: Enterprise AI Engineering
+  - name: Banking and Batch Systems
+    items:
+    - Payment systems
+    - COBOL/mainframe modernisation
+    - End-of-Day (EOD)
+    - Batch processing
+    - Job dependencies
+    - Workload orchestration
+  - name: DevOps and Containers
+    items:
+    - Azure DevOps
+    - GitHub Actions
+    - CI/CD
+    - Docker
+    - Kubernetes
+  - name: AI-Assisted Engineering
     items:
     - GitHub Copilot Enterprise
     - AI-assisted SDLC
@@ -78,14 +86,7 @@ skills:
     - Spec-Driven Development (SDD)
     - Developer enablement
     - Architecture enablement
-  - name: Delivery and Platforms
-    items:
-    - Azure DevOps
-    - GitHub Actions
-    - CI/CD
-    - Docker
-    - Kubernetes
-  - name: Technical Leadership and Quality
+  - name: Quality and Leadership
     items:
     - Architecture guidance
     - Code reviews
@@ -93,16 +94,15 @@ skills:
     - Coding standards
     - Unit testing
     - Playwright E2E testing
-  - name: Languages and Frameworks
+  - name: Web and Desktop
     items:
-    - Java 21
-    - Spring
     - TypeScript
     - JavaScript
+    - Knockout.js
     - WPF
     - WinForms
-    - Knockout.js
-  - name: Training
+    - WCF
+  - name: Additional Training
     items:
     - Microservices
     - .NET with AWS

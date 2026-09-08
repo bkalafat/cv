@@ -30,7 +30,7 @@ def generate_professional(data, filename):
         "meta": ParagraphStyle("EditorialMeta", parent=body, fontSize=8.5, leading=12, textColor=MUTED, spaceAfter=4, keepWithNext=True),
         "bullet": ParagraphStyle("EditorialBullet", parent=body, leftIndent=10, firstLineIndent=-10, spaceAfter=3),
         "small": ParagraphStyle("EditorialSmall", parent=body, fontSize=8.5, leading=12, spaceAfter=4),
-        "skill": ParagraphStyle("EditorialSkill", parent=body, fontSize=8.7, leading=11.6, spaceAfter=5),
+        "skill": ParagraphStyle("EditorialSkill", parent=body, fontSize=9, leading=12, spaceAfter=0),
     }
     def p(text, style="body"):
         return Paragraph(escape(str(text)), styles[style])
@@ -62,13 +62,15 @@ def generate_professional(data, filename):
 
     story.append(p(data["skills"]["title"], "section"))
     categories = data["skills"]["categories"]
-    cells = []
+    rows = []
     for category in categories:
-        cells.append(Paragraph(f'<b>{escape(category["name"])}</b><br/>{escape(", ".join(category["items"]))}', styles["skill"]))
-    rows = [cells[i:i + 2] + ([""] if len(cells[i:i + 2]) == 1 else []) for i in range(0, len(cells), 2)]
-    grid = Table(rows, colWidths=[width / 2] * 2, hAlign="LEFT")
+        rows.append([
+            Paragraph(f'<b>{escape(category["name"])}</b>', styles["skill"]),
+            Paragraph(escape(", ".join(category["items"])), styles["skill"]),
+        ])
+    grid = Table(rows, colWidths=[width * 0.27, width * 0.73], hAlign="LEFT")
     grid.setStyle(TableStyle([
-        ("BACKGROUND", (0, 0), (-1, -1), PALE), ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("ROWBACKGROUNDS", (0, 0), (-1, -1), [PALE, colors.white]), ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("LEFTPADDING", (0, 0), (-1, -1), 11), ("RIGHTPADDING", (0, 0), (-1, -1), 11),
         ("TOPPADDING", (0, 0), (-1, -1), 4), ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
     ]))
