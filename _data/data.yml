@@ -29,10 +29,10 @@ sidebar:
     - item: Travel and cultural exchange
 career-profile:
   title: Summary
-  summary: Hands-on software engineer with 14+ years in banking, payments and enterprise financial software. Modernises
-    COBOL/mainframe systems into .NET and Java backends, including EOD and batch workloads. Combines implementation,
-    architecture decisions and technical leadership with enterprise Copilot engineering and reusable AI-assisted
-    development workflows. International remote experience; targeting UK/EU relocation and EMEA remote opportunities,
+  summary: Hands-on software engineer with 14+ years across banking, payments, enterprise financial software and
+    government identity systems. Builds .NET/Java backends for digital banking, CRM and collections; modernises
+    COBOL/mainframe and EOD/batch workloads. Combines architecture decisions and technical leadership with enterprise
+    Copilot engineering. International remote experience; targeting UK/EU relocation and EMEA remote opportunities,
     including visa-sponsored roles.
 skills:
   title: Technical Skills
@@ -125,48 +125,50 @@ experiences:
       guidance, agent/sub-agent workflows and engineering standards.
     - Built repository- and database-oriented Copilot workflows and reusable engineering knowledge to support AI-assisted
       SDLC and spec-driven development across teams.
-    - Built internet and mobile banking backends for Türkiye Finans using ASP.NET MVC, WCF, SQL Server and unit
-      tests.
+    - Developed internet and mobile banking services for Türkiye Finans, implementing ASP.NET MVC/WCF backends with
+      SQL Server and unit tests.
   - role: Senior Software Engineer (Backend, .NET)
     time: September 2022 – April 2024
     company: insightsoftware
     location: North Carolina, USA (Remote)
     bullets:
-    - Developed C#/.NET Core backend features for enterprise financial software, contributing to architecture and
-      technical design.
-    - Collaborated with an international remote engineering team on backend design and delivery.
+    - Implemented C#/.NET Core backend features for enterprise financial software within an international remote
+      engineering team.
+    - Contributed to backend architecture and feature design, connecting technical decisions with hands-on implementation.
   - role: Senior Software Engineer (Backend, .NET)
     time: September 2017 – September 2022
     company: OBSS
     location: Istanbul, Turkey
     bullets:
-    - Led Halkbank mobile banking backend migration from .NET Framework to .NET Core and Clean Architecture.
+    - Led Halkbank mobile banking backend migration to .NET Core and Clean Architecture, restructuring the legacy
+      .NET Framework implementation.
     - Applied asynchronous programming and thread optimisation to banking request handling; built REST APIs with
       EF Core and SQL Server.
     - Used Repository/Unit of Work patterns and Azure DevOps CI/CD pipelines for backend delivery.
-    - Owned code reviews and mentored Türkiye Finans developers, establishing coding standards for WinForms and
-      WCF applications.
+    - Owned code reviews and mentored Türkiye Finans developers, defining coding standards for WinForms/WCF customer
+      applications.
     - Led Akbank payment campaign development with C#, Java/Spring, TypeScript, Knockout.js and Oracle 12c.
   - role: Java Developer
     time: January 2017 – September 2017
     company: TÜBİTAK
     location: Kocaeli, Turkey
     bullets:
-    - Built Java software to write EAC/SAC security data to passport smartcard chips using APDU commands for government
-      identification systems.
+    - Implemented Java passport personalisation software, writing EAC/SAC security data to smartcard chips through
+      APDU commands for government identity systems.
   - role: .NET Developer
     time: August 2013 – January 2017
     company: VakıfBank
     location: Istanbul, Turkey
     bullets:
-    - Modernised VakıfBank CRM and collections applications towards service-oriented architecture with WPF/MVVM,
-      WCF, Oracle 11g and PL/SQL.
+    - Reworked VakıfBank CRM and collections applications towards service-oriented architecture, using WPF/MVVM,
+      WCF and Oracle 11g/PL/SQL.
   - role: Part-Time .NET Developer
     time: December 2012 – June 2013
     company: VeriPark
     location: Izmir, Turkey
     bullets:
-    - Built ASP.NET widgets for Turkcell’s SharePoint environment while completing the Computer Engineering degree.
+    - Developed ASP.NET widgets for Turkcell’s SharePoint environment, contributing to portal functionality while
+      completing the Computer Engineering degree.
 education:
   title: Education
   info:
