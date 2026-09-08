@@ -2,15 +2,10 @@
 layout: default
 ---
 
-
 {% include career-profile.html %}
-
-{% unless site.data.data.sidebar.education %}
-  {% include education.html %}
-{% endunless %}
-
-{% include experiences.html %}
-
-{% include certifications.html %}
-
 {% include skills.html %}
+{% include experiences.html %}
+{% include education.html %}
+{% include certifications.html %}
+{% include language.html %}
+{% include interests.html %}

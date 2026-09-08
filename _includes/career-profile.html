@@ -1,18 +1,5 @@
-{% assign career-profile = site.data.data.career-profile %}
-{% if career-profile %}
-<section class="section summary-section">
-
-  <h2 class="section-title">
-    <span class="fa-stack fa-xs">
-      <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="fas fa-user fa-stack-1x fa-inverse"></i>
-    </span>
-    {{ career-profile.title }}
-  </h2>
-
-  <div class="summary">
-    {{ career-profile.summary | markdownify }}
-  </div><!--//summary-->
-    
-</section><!--//section-->
-{% endif %}
+{% assign profile = site.data.data.career-profile %}
+<section class="section summary-section" aria-labelledby="summary-title">
+  <h2 class="section-title" id="summary-title">{{ profile.title | escape }}</h2>
+  <p class="summary">{{ profile.summary | escape }}</p>
+</section>

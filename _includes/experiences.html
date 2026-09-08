@@ -1,37 +1,19 @@
 {% assign experiences = site.data.data.experiences %}
-{% if experiences %}
-<section class="section experiences-section">
-  <h2 class="section-title">
-    <span class="fa-stack fa-xs">
-      <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
-    </span>
-    {{ experiences.title }}
-  </h2>
-
+<section class="section experiences-section" aria-labelledby="experience-title">
+  <h2 class="section-title" id="experience-title">{{ experiences.title | escape }}</h2>
   {% for experience in experiences.info %}
-  <div class="item">
-
+  <article class="item">
     <div class="meta">
-
       <div class="upper-row">
-        <h3 class="job-title">{{ experience.role }}</h3>
-        <div class="time">{{ experience.time }}</div>
-      </div><!--//upper-row-->
-
-      <div class="company">{{ experience.company }}</div>
-
-    </div><!--//meta-->
-
-    {% if experience.details %}
-    <div class="details">
-      {{ experience.details | markdownify }}
-    </div><!--//details-->
-    {% endif %}
-
-  </div><!--//item-->
+        <h3 class="job-title">{{ experience.role | escape }}</h3>
+        <p class="time">{{ experience.time | escape }}</p>
+      </div>
+      <p class="company">{{ experience.company | escape }} · {{ experience.location | escape }}</p>
+    </div>
+    <ul class="experience-bullets">
+      {% for bullet in experience.bullets %}<li>{{ bullet | escape }}</li>{% endfor %}
+    </ul>
+    <p class="technologies"><strong>Technologies:</strong> {{ experience.technologies | join: ', ' | escape }}</p>
+  </article>
   {% endfor %}
-
-</section><!--//section-->
-{% endif %}
-
+</section>

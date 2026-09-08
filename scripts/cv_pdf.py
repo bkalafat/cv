@@ -103,6 +103,10 @@ def build_story(data, styles):
         metadata = [credential["organization"], credential["kind"]]
         if credential.get("start"):
             metadata.append(str(credential["start"]))
+        if credential.get("expires"):
+            metadata.append("Expires " + credential["expires"])
+        if credential.get("credentialname"):
+            metadata.append(credential["credentialname"])
         story.append(Paragraph(label + " | " + escape(" | ".join(metadata)), styles["small"]))
 
     for key, text in (

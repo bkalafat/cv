@@ -1,58 +1,41 @@
-#
-# Site Settings for Online CV Theme
-# Be aware that even a small syntax error here can lead to failures in output
-#
-
-# Site configuration
-title: Burak Kalafat - CV
-description: Professional CV/Resume of Burak Kalafat - Senior Software Engineer (Backend, .NET) specializing in .NET and backend development
-baseurl: "" # empty for custom domain (cv.bkalafat.com)
-url: "https://cv.bkalafat.com" # custom domain
-
-# Theme configuration
-# Available skins: blue, turquoise, green, berry, orange, ceramic
-# Choose the one that looks most professional
-theme_skin: blue
-
-# SEO and Meta
+title: Burak Kalafat | Senior Backend Engineer | .NET
+description: >-
+  Burak Kalafat, senior backend engineer and .NET specialist with 12+ years in banking,
+  legacy modernization, architecture, and technical leadership.
+baseurl: ""
+url: "https://cv.bkalafat.com"
 lang: en
-# Google Analytics tracking ID (optional)
-# analytics: UA-XXXXXXXXX-X
-
-# Chrome mobile color (optional)
-chrome_mobile_color: #42A8C0
-
-# Build settings
+author: Burak Kalafat
+theme_skin: blue
+logo: /assets/images/profile.png
+social:
+  name: Burak Kalafat
+  links:
+    - https://www.linkedin.com/in/bkalafat/
+    - https://github.com/bkalafat
 markdown: kramdown
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-
-# Exclude from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - README.md
-  - PLAN.md
-  - BURAK_KALAFAT.pdf
-  - BURAK_KALAFAT.docx
-  - _config.yml.backup
-  - output/
-  - downloads/
-  - "*.gem"
-  - "*.gemspec"
-  - LICENSE
-  - package.json
-  - package-lock.json
-  - .github/
-  - docker-compose.yml
-
-# Google Analytics (optional)
-# google_analytics: "UA-XXXXXXX-X"
-
-# Additional settings for modern-resume-theme
 sass:
   sass_dir: _sass
   style: compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - requirements.txt
+  - README.md
+  - docs/
+  - scripts/
+  - tests/
+  - tmp/
+  - temp/
+  - output/
+  - vendor/
+  - node_modules/
+  - .venv/
+  - .github/
+  - .bundle/
+  - downloads/README.md
+  - assets/fonts/
+  - assets/plugins/

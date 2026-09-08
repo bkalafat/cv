@@ -1,34 +1,19 @@
 ---
-#Add "layout: compress" here to compress the html code
 ---
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en"> <!--<![endif]-->
+<html lang="{{ site.lang | default: 'en' }}">
 {% include head.html %}
-
 <body>
-  <button onclick="window.open('https://raw.githubusercontent.com/bkalafat/cv/main/downloads/Burak_Kalafat_Professional_CV.pdf', '_blank')" class="pdf-button d-print-none" style="right: 130px;" title="Download Professional CV">
-    <i class="fas fa-file-pdf"></i> CV
-  </button>
-
-  <button onclick="window.open('https://raw.githubusercontent.com/bkalafat/cv/main/downloads/Burak_Kalafat_ATS_CV.pdf', '_blank')" class="pdf-button d-print-none" style="right: 20px;" title="Download ATS-Optimized CV">
-    <i class="fas fa-file-pdf"></i> ATS
-  </button>
-
+  <a class="skip-link" href="#main-content">Skip to CV content</a>
+  <nav class="download-bar" aria-label="Download CV">
+    <a class="download-link" href="{{ '/downloads/Burak_Kalafat_Professional_CV.pdf' | relative_url }}" download>Professional CV (PDF)</a>
+    <a class="download-link download-link-secondary" href="{{ '/downloads/Burak_Kalafat_ATS_CV.pdf' | relative_url }}" download>ATS CV (PDF)</a>
+  </nav>
   <div class="wrapper">
     {% include sidebar.html %}
-
-    <div class="main-wrapper">
-      {{ content }}
-    </div>
+    <main class="main-wrapper" id="main-content" tabindex="-1">{{ content }}</main>
   </div>
-
   {% include footer.html %}
-
   {% include scripts.html %}
-  <script src="{{ site.baseurl }}/assets/js/pdf-generator.js"></script>
 </body>
-
 </html>

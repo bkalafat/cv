@@ -1,22 +1,5 @@
 {% assign interests = site.data.data.sidebar.interests %}
-{% if interests %}
-<div class="interests-container container-block">
-
-  <h2 class="container-block-title">
-    {{ interests.title }}
-  </h2>
-
-  <ul class="list-unstyled interests-list">
-    {% for interest in interests.info %}
-
-      {% if interest.link %}
-      <li><a href="{{ interest.link }}">{{ interest.item }}</a></li>
-      {% else %}
-      <li>{{ interest.item }}</li>
-      {% endif %}
-
-    {% endfor %}
-  </ul>
-
-</div><!--//interests-->
-{% endif %}
+<section class="section interests-section" aria-labelledby="interests-title">
+  <h2 class="section-title" id="interests-title">{{ interests.title | escape }}</h2>
+  <p>{% for interest in interests.info %}{{ interest.item | escape }}{% unless forloop.last %}; {% endunless %}{% endfor %}</p>
+</section>

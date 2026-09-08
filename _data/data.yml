@@ -127,9 +127,13 @@ education:
 certifications:
   title: Certifications and Training
   list:
-    - name: AI-102
+    - name: "Microsoft Certified: Azure AI Engineer Associate"
       organization: Microsoft
       kind: Certification
+      start: March 6, 2026
+      expires: March 6, 2027
+      credentialurl: https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/
+      credentialname: Certification overview (AI-102)
     - name: Introduction to GitHub Copilot
       start: "2024"
       organization: Microsoft Learn
