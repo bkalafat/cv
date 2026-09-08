@@ -1,9 +1,8 @@
 source "https://rubygems.org"
 
-# Ruby version compatibility
-ruby ">= 2.7.0"
-
-# GitHub Pages gem includes Jekyll and required plugins
-gem "github-pages", "~> 231", group: :jekyll_plugins
-gem "jekyll"
-gem "webrick", "~> 1.8"
+ruby ">= 3.3", "< 4.0"
+gem "jekyll", "~> 4.4.1"
+gem "jekyll-seo-tag", "~> 2.8"
+gem "jekyll-sitemap", "~> 1.4"
+gem "webrick", "~> 1.9"
+gem "tzinfo-data", platforms: [:windows, :jruby]

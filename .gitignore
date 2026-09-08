@@ -8,7 +8,6 @@ vendor/
 # Ruby
 *.gem
 .bundle
-Gemfile.lock
 
 # macOS
 .DS_Store
@@ -41,3 +40,5 @@ output/
 tmp/
 temp/
 .playwright-mcp/
+.venv/
+__pycache__/

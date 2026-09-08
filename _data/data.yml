@@ -1,265 +1,153 @@
-#
-# Be aware that even a small syntax error here can lead to failures in output.
-#
-
+# Canonical CV content for Jekyll and both PDF generators.
+# Unresolved facts and editorial decisions: docs/CV_AUDIT.md.
 sidebar:
-  position: right # position of the sidebar: left or right
-  about: False # set to False if you don't want the "About Theme" section
-  education: True # set to False if you want education in main section instead of in sidebar
-
-  # Profile information
+  position: left
+  about: false
+  education: false
   name: Burak Kalafat
-  tagline: Senior Software Engineer (Backend, .NET)
-  avatar: profile.png # place a 100x100 picture inside /assets/images/ folder
-
-  # Sidebar links
+  tagline: Senior Backend Engineer | .NET & Technical Leadership
+  avatar: profile.png
   email: burakkalafat89@gmail.com
-  phone: +905403506161
+  phone: "+905403506161"
+  location: Istanbul, Turkey
   timezone: Europe/Istanbul
-  citizenship:
-  website:
+  website: https://cv.bkalafat.com
   linkedin: bkalafat
-  xing:
   github: bkalafat
-  telegram: # add your nickname without '@' sign
-  gitlab:
-  bitbucket:
-  bluesky:
-  twitter:
-  stack-overflow: # Number/Username
-  codewars:
-  goodreads:
-  mastodon:
-  hackerrank:
-  leetcode:
-  pdf: # PDF button (top-right)
-  docx: # DOCX button (top-right)
-
   languages:
     title: Languages
     info:
       - idiom: Turkish
         level: Native
-
       - idiom: English
-        level: Professional
-
+        level: Professional proficiency; IELTS Band 7 (2023)
   interests:
     title: Interests
     info:
       - item: Chess
-        link:
-
-      - item: LLM & RAG-based Enterprise Solutions
-        link:
-
-      - item: AI-Powered Customer Service Systems
-        link:
-
-      - item: Travel & Exploring Cultures
-        link:
+      - item: LLM and RAG applications
+      - item: AI-powered customer service
+      - item: Travel and cultural exchange
 
 career-profile:
   title: Professional Summary
-  summary: |
-    **Senior Software Engineer (Backend, .NET)** with 12+ years of experience specializing in large-scale legacy modernization, 
-    clean architecture, and high-performance backend systems within the financial sector. Proven technical leader 
-    adept at mentoring teams, conducting code reviews, and driving architectural decisions.
-    
-    **GitHub Copilot Enterprise champion** with specialized expertise in AI-assisted development, delivering 
-    organization-wide training and achieving **6-8× acceleration** on large-scale legacy modernization projects 
-    within 3 months. Expert in Spec-Driven Development (SDD) and prompt engineering for 
-    enterprise-scale modernization.
-    
-    Demonstrated impact through **performance optimization** (5-6× concurrent user capacity increase), 
-    **technical leadership** (code review ownership, team mentorship), and **architectural excellence** 
-    (Clean Architecture, design patterns, asynchronous programming).
+  summary: >-
+    Senior backend engineer and .NET specialist with 12+ years of experience in financial
+    services, banking systems, and legacy modernization. Leads architecture, code reviews,
+    and mentoring across banking engagements, from COBOL/mainframe transformation to
+    .NET backend design. Combines hands-on C# development, database integration, and
+    asynchronous programming with international remote team experience and practical
+    AI-assisted engineering.
+
+skills:
+  title: Technical Skills
+  categories:
+    - name: Backend Engineering
+      items: [C#, .NET, .NET Core, ASP.NET MVC, REST APIs, EF Core, Asynchronous programming, WCF]
+    - name: Architecture and Design
+      items: [Clean Architecture, Legacy modernization, Service-oriented architecture, Repository, Unit of Work, Facade, Strategy]
+    - name: Databases
+      items: [SQL Server (MSSQL), Oracle, PL/SQL]
+    - name: Languages and Frameworks
+      items: [Java, Spring, TypeScript, JavaScript, WPF, WinForms, Knockout.js]
+    - name: DevOps
+      items: [Azure DevOps, GitHub Actions, CI/CD]
+    - name: AI-Assisted Development
+      items: [GitHub Copilot Enterprise, Prompt engineering, Spec-Driven Development (SDD)]
+    - name: Quality and Leadership
+      items: [Unit testing, Playwright E2E testing, Code reviews, Mentoring, Architecture guidance, Coding standards]
+    - name: Training
+      items: [Microservices, Distributed systems, .NET with AWS, Containerization, React]
+
+experiences:
+  title: Professional Experience
+  info:
+    - role: Senior Software Engineer (Backend, .NET)
+      time: May 2024 - Present
+      company: Innovance
+      location: Istanbul, Turkey (Remote)
+      bullets:
+        - "Akbank: Led COBOL/mainframe modernization into C# and Java backend services for banking systems."
+        - "Guided architecture, coding standards, and mentoring using Clean Architecture and Repository, Unit of Work, Facade, and Strategy patterns."
+        - "Applied specification-driven workflows and AI-assisted development to align implementation with requirements."
+        - "Türkiye Finans: Developed internet and mobile banking backends using ASP.NET MVC, WCF, and SQL Server, with unit tests."
+      technologies: [C#, .NET, Java, ASP.NET MVC, WCF, SQL Server, GitHub Copilot Enterprise, Azure DevOps, GitHub Actions]
+
+    - role: Senior Software Engineer (Backend, .NET)
+      time: September 2022 - April 2024
+      company: insightsoftware
+      location: North Carolina, USA (Remote)
+      bullets:
+        - "Contributed to backend architecture, design, and implementation of C# and .NET Core features in an international remote team."
+      technologies: [C#, .NET Core, Backend architecture]
+
+    - role: Senior Software Engineer (Backend, .NET)
+      time: September 2017 - September 2022
+      company: OBSS
+      location: Istanbul, Turkey
+      bullets:
+        - "Halkbank: Led mobile banking backend migration from .NET Framework to .NET Core and Clean Architecture, applying asynchronous programming and thread optimization."
+        - "Built REST APIs with EF Core and SQL Server, using Repository and Unit of Work patterns and Azure DevOps CI/CD pipelines."
+        - "Türkiye Finans: Owned code reviews, mentored developers, and established coding standards; developed corporate customer applications with WinForms and WCF."
+        - "Akbank: Led full-stack development for a payment system campaign using TypeScript, Knockout.js, C#, Java/Spring, and Oracle 12c."
+      technologies: [.NET Core, REST APIs, EF Core, SQL Server, Azure DevOps, TypeScript, Knockout.js, Java, Spring, Oracle 12c, WinForms, WCF]
+
+    - role: Java Developer
+      time: January 2017 - September 2017
+      company: TÜBİTAK
+      location: Kocaeli, Turkey
+      bullets:
+        - "Developed Java software using APDU commands to write EAC/SAC security data to passport smartcard chips for government identification systems."
+      technologies: [Java, APDU, Smartcards, EAC/SAC]
+
+    - role: .NET Developer
+      time: August 2013 - January 2017
+      company: VakıfBank
+      location: Istanbul, Turkey
+      bullets:
+        - "Modernized CRM and collections applications toward service-oriented architecture using WPF/MVVM, WCF, Oracle 11g, and PL/SQL."
+      technologies: [.NET, WPF, MVVM, WCF, Oracle 11g, PL/SQL]
+
+    - role: Part-Time .NET Developer
+      time: December 2012 - June 2013
+      company: VeriPark
+      location: Izmir, Turkey
+      bullets:
+        - "Built ASP.NET widgets for Turkcell's SharePoint environment while completing the Computer Engineering degree."
+      technologies: [ASP.NET, SharePoint]
 
 education:
   title: Education
   info:
     - degree: BSc in Computer Engineering
       university: Ege University
-      time: 2008 - 2013
-      details:
-
-experiences:
-  title: Experience
-  info:
-    - role: Senior Software Engineer (Backend, .NET)
-      time: May 2024 - Present
-      company: Innovance, Istanbul (Remote)
-      details: |
-        Lead technical modernization initiatives across major financial institutions, serving as technical advisor and GitHub Copilot champion:
-        
-        **Akbank - Large-Scale Legacy Modernization**:
-          - Led large-scale legacy COBOL mainframe modernization to modern C# and Java backend services in **3 months**, achieving **6-8× acceleration** through AI-assisted development
-          - Provided technical leadership through architectural guidance, coding standards establishment, and team mentorship on Clean Architecture principles
-          - Delivered **3 company-wide presentations** on GitHub Copilot Enterprise adoption to management, establishing AI-assisted development best practices organization-wide
-          - Implemented Spec-Driven Development (SDD) methodology using GitHub Copilot Agent and custom modes, eliminating hallucinations and ensuring zero scope drift
-          - Applied Repository, Unit of Work, Facade, and Strategy design patterns to ensure maintainable, testable codebase
-        
-        **Turkiye Finans - Internet and Mobile Banking Backend**:
-          - Developed robust banking backend systems using MVC, WCF, and MSSQL with comprehensive unit testing coverage
-        
-        Technologies: C#, .NET Core, Java, MVC, WCF, MSSQL, GitHub Copilot Enterprise, Prompt Engineering, Design Patterns (Repository, Unit of Work, Facade, Strategy), GitHub Actions, Azure DevOps
-
-    - role: Senior Software Engineer (Backend, .NET)
-      time: September 2022 - April 2024
-      company: InsightSoftware, North Carolina (Remote)
-      details: |
-        - Contributed to architecture, design, and implementation of backend-focused features using C#
-        - Collaborated within an international, remote-first environment
-        - Delivered scalable, maintainable solutions
-        
-        Technologies: C#, .NET Core, Backend Architecture
-
-    - role: Senior Software Engineer (Backend, .NET)
-      time: September 2017 - September 2022
-      company: OBSS, Istanbul
-      details: |
-        Led technical modernization and architecture initiatives across major Turkish banks with code review responsibilities and team mentorship:
-        
-        **Halkbank - Mobile Banking Backend Transformation**:
-          - Architected and led migration from legacy .NET Framework to Clean Architecture using .NET Core
-          - Increased concurrent user capacity **5-6× per server** through asynchronous programming patterns and thread optimization strategies
-          - Developed scalable REST APIs with EF Core and MSSQL, deployed via Azure DevOps CI/CD pipelines
-          - Implemented Repository and Unit of Work patterns for maintainable data access layer
-        
-        **Turkiye Finans - Technical Leadership and Code Review**:
-          - Owned code review process for development team, ensuring code quality, best practices, and architectural compliance
-          - Mentored development team through regular code reviews and architectural guidance sessions
-          - Developed enterprise-level corporate customer solutions using WinForms and WCF services
-          - Established coding standards and review guidelines, improving code quality and reducing bug rates
-        
-        **Akbank - Payment System Full-Stack Development**:
-          - Led Payment System campaign as Full-Stack Developer using TypeScript, Knockout.js, C#, and Java Spring
-          - Integrated frontend and backend systems with Oracle 12c database, ensuring transactional consistency
-        
-        Technologies: .NET Core, REST APIs, EF Core, MSSQL, Clean Architecture, Asynchronous Programming, TypeScript, Knockout.js, Java Spring, Oracle 12c, Azure DevOps, Design Patterns (Repository, Unit of Work)
-
-    - role: Java Developer
-      time: January 2017 - September 2017
-      company: TUBITAK, Kocaeli
-      details: |
-        - Utilized Java and APDU protocols to write high-level security EAC SAC data to smartcard passport chips
-        - Contributed to secure government identification systems
-        
-        Technologies: Java, APDU, Smartcard Technology
-
-    - role: .NET Developer
-      time: August 2013 - February 2017
-      company: VakıfBank, Istanbul
-      details: |
-        - Transformed legacy systems to service-oriented architectures for CRM and Collections teams
-        - Implemented MVVM pattern with WPF and WCF services
-        - Developed database solutions using Oracle 11g and PL/SQL
-        
-        Technologies: .NET, MVVM, WPF, WCF, Oracle 11g, PL/SQL
-
-    - role: Part-Time .NET Developer
-      time: December 2012 - June 2013
-      company: VeriPark, Izmir
-      details: |
-        - Developed custom widgets using ASP.NET for Turkcell SharePoint environment
-        - Contributed part-time while completing university studies
-        
-        Technologies: ASP.NET, SharePoint
+      location: Izmir, Turkey
+      time: September 2008 - June 2013
 
 certifications:
-  title: Certifications
+  title: Certifications and Training
   list:
+    - name: AI-102
+      organization: Microsoft
+      kind: Certification
     - name: Introduction to GitHub Copilot
-      start: 2024
-      end:
+      start: "2024"
       organization: Microsoft Learn
-      credentialid:
+      kind: Training
       credentialurl: https://learn.microsoft.com/en-us/training/modules/introduction-to-github-copilot/
-      credentialname: Microsoft Learn
-      details: |
-        Completed official Microsoft training on GitHub Copilot, covering AI-assisted development workflows, 
-        prompt engineering techniques, and enterprise-scale AI pair programming best practices.
-
+      credentialname: Course overview
     - name: Build Microservices with .NET and Amazon Web Services
-      start: 2024
-      end:
+      start: February 2024
       organization: Udemy
-      credentialid:
-      credentialurl:
-      credentialname:
-      details: |
-        Completed advanced training in building scalable microservices using .NET and AWS, 
-        covering distributed systems, containerization, and cloud deployment strategies.
-
-    - name: IELTS (Band 7)
-      start: 2023
-      end:
+      kind: Training
+    - name: IELTS - Band 7
+      start: "2023"
       organization: British Council
-      credentialid: 23TR003024KALB002G
-      credentialurl:
-      credentialname: British Council
-      details: |
-        British Council certified English language proficiency test. Band 7 demonstrates 
-        "Good User" level competency, suitable for professional and academic environments.
-
+      kind: Language test
     - name: React Nanodegree Program
-      start: 2020
-      end:
+      start: February 2020
       organization: Udacity
-      credentialid:
-      credentialurl: https://www.udacity.com
-      credentialname: Udacity
-      details: |
-        Completed comprehensive React training covering modern frontend development practices, 
-        state management, and component architecture.
+      kind: Training
 
-skills:
-  title: Skills and Proficiency
-  toolset:
-    - name: C# and .NET Core
-      level: 98%
-
-    - name: GitHub Copilot Enterprise and AI-Assisted Development
-      level: 95%
-
-    - name: Clean Architecture and Design Patterns
-      level: 95%
-
-    - name: REST APIs and Asynchronous Programming
-      level: 95%
-
-    - name: EF Core and Database Design (MSSQL, Oracle)
-      level: 90%
-
-    - name: Azure DevOps and GitHub Actions CI/CD
-      level: 90%
-
-    - name: Unit Testing and E2E Testing (Playwright)
-      level: 85%
-
-    - name: TypeScript, JavaScript and Java Spring
-      level: 85%
-
-    - name: Technical Leadership and Code Review
-      level: 90%
-
-    - name: Microservices Architecture (Training)
-      level: 70%
-
-oss:
-  title: Open Source Projects
-  intro: >
-    Personal projects demonstrating expertise in developer tooling, AI integration, and .NET development.
-  contributions:
-    - title: DiffPilot - MCP Server for Code Review
-      link: https://marketplace.visualstudio.com/items?itemName=BurakKalafat.diffpilot
-      tagline: VS Code Extension | .NET 9 | MCP Protocol
-      description: |
-        **Model Context Protocol (MCP) Server** for AI-powered PR code review and developer productivity.
-        Published on VS Code Marketplace and NuGet registry.
-        
-        - Developed 9 MCP tools: PR diff, code review, commit message generation, secret scanning, changelog generation
-        - **100% on-premise** - no cloud services, fully air-gapped environment compatible
-        - Works with **GitHub Copilot, Claude**, and other MCP-enabled AI assistants
-        - Enterprise-ready: GDPR compliant, supports Azure DevOps Server/TFS, banking & financial environments
-        - Built with **.NET 9**, auto-registers as MCP server in VS Code
+footer: >-
+  Design adapted from Orbit by <a href="https://themes.3rdwavemedia.com/">Xiaoying Riley</a>.
